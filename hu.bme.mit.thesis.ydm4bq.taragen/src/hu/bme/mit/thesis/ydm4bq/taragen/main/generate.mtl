@@ -5,12 +5,12 @@
 [template public generateElement(m : Model)]
 [comment @main/]
 [file ('TARA_impact_rating.csv', false, 'UTF-8')]
-Impact rating
+Impact rating,,,,
 Damage scenario,Safety,Financial,Operational,Privacy
 [for (p:Package | m.eContents(Package))]
   [if (p.name = 'abuse_cases')]
     [for (u:UseCase | p.eContents(UseCase))]
-[u.name/]
+[u.name/],,,,
     [/for]
   [/if]
 [/for]
