@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generate" name="hu.bme.mit.thesis.ydm4bq.taragen">
-    <property name="ECLIPSE_HOME" value="../../../../Tasks/05_MBSA4CPS/papyrus"/>
+    <property name="ECLIPSE_HOME" value="../../../../papyrus-2023-12-6.6.0-win64/Papyrus"/>
     <property name="ECLIPSE_WORKSPACE" value="../.."/>
 
     <!-- The classpath with only the dependencies used by the project -->
