@@ -1,4 +1,0 @@
-Impact rating,,,,
-Damage scenario,Safety,Financial,Operational,Privacy
-false
-true

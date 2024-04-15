@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_6z3GgPqGEe6laZ0xGLbPGw/10" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_6z3GgPqGEe6laZ0xGLbPGw/10 ../hu.bme.mit.thesis.ydm4bq.cybersecurity/hu.bme.mit.thesis.ydm4bq.cybersecurity.profile.uml#_6z3tkPqGEe6laZ0xGLbPGw">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_VDywUPtGEe6M-OxlxbXykg/17" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_VDywUPtGEe6M-OxlxbXykg/17 ../hu.bme.mit.thesis.ydm4bq.cybersecurity/hu.bme.mit.thesis.ydm4bq.cybersecurity.profile.uml#_VDz-cPtGEe6M-OxlxbXykg">
   <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="model">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_csu24PXQEe6yUs2YwO9X6Q">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -38,9 +38,9 @@
       <ownedComment xmi:type="uml:Comment" xmi:id="_PKwuMPqHEe6laZ0xGLbPGw">
         <body>ISO21434-WP-09-01</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Component" xmi:id="_T4xVcPqHEe6laZ0xGLbPGw" name="Actuation"/>
-      <packagedElement xmi:type="uml:Component" xmi:id="_jZ458PqHEe6laZ0xGLbPGw" name="CAN Interface"/>
-      <packagedElement xmi:type="uml:Component" xmi:id="_nD9X8PqHEe6laZ0xGLbPGw" name="CAN Message"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_VNpFUPtFEe6M-OxlxbXykg" name="Actuation"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_WwjpkPtFEe6M-OxlxbXykg" name="CAN Message"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_emRooPtFEe6M-OxlxbXykg" name="CAN Connector"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ph5ZEPddEe6_stnQ67IcSQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_bkdLkPgSEe6fsr6JTPYh-Q" source="PapyrusVersion">
@@ -51,14 +51,14 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_bkdLlfgSEe6fsr6JTPYh-Q" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ph6AIPddEe6_stnQ67IcSQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../hu.bme.mit.thesis.ydm4bq.cybersecurity/hu.bme.mit.thesis.ydm4bq.cybersecurity.profile.uml#_6z3tkPqGEe6laZ0xGLbPGw"/>
+        <references xmi:type="ecore:EPackage" href="../hu.bme.mit.thesis.ydm4bq.cybersecurity/hu.bme.mit.thesis.ydm4bq.cybersecurity.profile.uml#_VDz-cPtGEe6M-OxlxbXykg"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../hu.bme.mit.thesis.ydm4bq.cybersecurity/hu.bme.mit.thesis.ydm4bq.cybersecurity.profile.uml#_-WiXkPdbEe6_stnQ67IcSQ"/>
     </profileApplication>
   </uml:Model>
-  <hu:damage_scenario xmi:id="_tx85APddEe6_stnQ67IcSQ" base_UseCase="_Us2ZwPXREe6DI8aRwY-w-w" integrity="true" authenticity="true" functionality="_iV5tYPqHEe6laZ0xGLbPGw"/>
-  <hu:damage_scenario xmi:id="_ZDZi4Pf4Ee6Esp-DwAYj5Q" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" availability="true"/>
-  <hu:Functionality xmi:id="_iV5tYPqHEe6laZ0xGLbPGw" base_Component="_T4xVcPqHEe6laZ0xGLbPGw"/>
-  <hu:Asset xmi:id="_xAt8APqHEe6laZ0xGLbPGw" base_Component="_jZ458PqHEe6laZ0xGLbPGw"/>
-  <hu:Asset xmi:id="_yAsyUPqHEe6laZ0xGLbPGw" base_Component="_nD9X8PqHEe6laZ0xGLbPGw"/>
+  <hu:damage_scenario xmi:id="_KW3wEPtFEe6M-OxlxbXykg" base_UseCase="_Us2ZwPXREe6DI8aRwY-w-w" integrity="true" authenticity="true" functionality="_YJw4MPtFEe6M-OxlxbXykg"/>
+  <hu:damage_scenario xmi:id="_KW4-MPtFEe6M-OxlxbXykg" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" availability="true"/>
+  <hu:Functionality xmi:id="_YJw4MPtFEe6M-OxlxbXykg" base_Component="_VNpFUPtFEe6M-OxlxbXykg" base_Class="_VNpFUPtFEe6M-OxlxbXykg" asset="_ZFb2QPtFEe6M-OxlxbXykg _i4jWIPtFEe6M-OxlxbXykg"/>
+  <hu:Asset xmi:id="_ZFb2QPtFEe6M-OxlxbXykg" base_Component="_WwjpkPtFEe6M-OxlxbXykg" base_Class="_WwjpkPtFEe6M-OxlxbXykg" integrity="true" availability="true" authenticity="true"/>
+  <hu:Asset xmi:id="_i4jWIPtFEe6M-OxlxbXykg" base_Component="_emRooPtFEe6M-OxlxbXykg" base_Class="_emRooPtFEe6M-OxlxbXykg" integrity="true"/>
 </xmi:XMI>
