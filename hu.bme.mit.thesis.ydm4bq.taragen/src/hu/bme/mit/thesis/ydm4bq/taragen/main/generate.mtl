@@ -11,7 +11,7 @@ Asset,Type,Confidentiality,Integrity,Availability,Authenticity
   [if (p.name = 'abuse_cases')]
     [for (u:UseCase | p.eContents(UseCase))]
       [if (not u.getAppliedStereotype('hu::damage_scenario').oclIsUndefined())]
-[u.getValue(u.getAppliedStereotype('hu::damage_scenario'), 'availability')/]
+[u.getValue(u.getAppliedStereotype('hu::damage_scenario'), 'functionality')/]
       [/if]
 [ comment u.name/]
     [/for]
