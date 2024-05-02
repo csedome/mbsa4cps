@@ -42,7 +42,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "generateImpactRating" };
+    public static final String[] TEMPLATE_NAMES = { "generateCybersecurityDescriptor" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).
