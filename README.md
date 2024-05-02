@@ -3,10 +3,10 @@ My masters thesis project with the name "Model-based security for Cyber-Physical
 
 This project is a simple solution for papyrus based models. This project holds a (i) UML profile made for cybersecurity, (ii) a simplified model containing a (ab)use case diagram and a component diagram, (iii) a code generator made using Acceleo, that generate a .apeditor threat model that will be used by the security analysis tool developed as part of my thesis project.
 
-# Cybersecurity profile
+## Cybersecurity profile
 
-# Abuse case diagram
+## Abuse case diagram
 
-# Component diagram
+## Component diagram
 
-# Code generation and model transformation
+## Code generation and model transformation
