@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package hu.bme.mit.thesis.ydm4bq.taragen;
+package hu.bme.mit.thesis.tmgen;
 
 import org.eclipse.core.runtime.Plugin;
 import org.osgi.framework.BundleContext;
@@ -21,7 +21,7 @@ public class Activator extends Plugin {
     /**
      * The plug-in ID.
      */
-    public static final String PLUGIN_ID = "hu.bme.mit.thesis.ydm4bq.taragen";
+    public static final String PLUGIN_ID = "hu.bme.mit.thesis.tmgen";
 
     /**
      * The shared instance.

@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Acceleo Taragen Module Runtime Plug-in
-Bundle-SymbolicName: hu.bme.mit.thesis.ydm4bq.taragen
+Bundle-SymbolicName: hu.bme.mit.thesis.tmgen
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: hu.bme.mit.thesis.ydm4bq.taragen.Activator
+Bundle-Activator: hu.bme.mit.thesis.tmgen.Activator
 Bundle-Vendor: Eclipse Modeling Project
 Require-Bundle: org.eclipse.core.runtime, 
  org.eclipse.uml2.uml, 
@@ -19,5 +19,5 @@ Require-Bundle: org.eclipse.core.runtime,
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-ActivationPolicy: lazy
 Eclipse-LazyStart: true
-Export-Package: hu.bme.mit.thesis.ydm4bq.taragen.main
+Export-Package: hu.bme.mit.thesis.tmgen.main
 

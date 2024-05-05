@@ -8,7 +8,7 @@
  * Contributors:
  *     Obeo - initial API and implementation
  *******************************************************************************/
-package hu.bme.mit.thesis.ydm4bq.taragen.main;
+package hu.bme.mit.thesis.tmgen.main;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,14 +35,14 @@ public class Generate extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public static final String MODULE_FILE_NAME = "/hu/bme/mit/thesis/ydm4bq/taragen/main/generate";
+    public static final String MODULE_FILE_NAME = "/hu/bme/mit/thesis/tmgen/main/generate";
     
     /**
      * The name of the templates that are to be generated.
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "generateCybersecurityDescriptor" };
+    public static final String[] TEMPLATE_NAMES = { "generateThreatModel" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).

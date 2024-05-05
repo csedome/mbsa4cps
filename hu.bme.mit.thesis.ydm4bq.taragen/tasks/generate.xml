@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project default="generate" name="hu.bme.mit.thesis.ydm4bq.taragen">
+<project default="generate" name="hu.bme.mit.thesis.tmgen">
     <property name="ECLIPSE_HOME" value="../../../../papyrus-2023-12-6.6.0-win64/Papyrus"/>
     <property name="ECLIPSE_WORKSPACE" value="../.."/>
 
     <!-- The classpath with only the dependencies used by the project -->
-    <path id="hu.bme.mit.thesis.ydm4bq.taragen.libraryclasspath">
-        <pathelement location="${ECLIPSE_WORKSPACE}/hu.bme.mit.thesis.ydm4bq.taragen/bin"/>
+    <path id="hu.bme.mit.thesis.tmgen.libraryclasspath">
+        <pathelement location="${ECLIPSE_WORKSPACE}/hu.bme.mit.thesis.tmgen/bin"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858/jre/lib/jrt-fs.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.osgi.annotation.versioning_1.1.2.202109301733.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.osgi.annotation.bundle_2.0.0.202202082230.jar"/>
@@ -41,23 +41,23 @@
         <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_32.1.3.jre.jar"/>
     </path>
 
-    <path id="hu.bme.mit.thesis.ydm4bq.taragen.classpath">
-        <path refid="hu.bme.mit.thesis.ydm4bq.taragen.libraryclasspath"/>
+    <path id="hu.bme.mit.thesis.tmgen.classpath">
+        <path refid="hu.bme.mit.thesis.tmgen.libraryclasspath"/>
     </path>
 
     <!-- The classpath with only the jars available in the plugin folder of Eclipse -->
-    <path id="hu.bme.mit.thesis.ydm4bq.taragen.libraryclasspath.alljars">
-        <pathelement location="../hu.bme.mit.thesis.ydm4bq.taragen/bin"/>
+    <path id="hu.bme.mit.thesis.tmgen.libraryclasspath.alljars">
+        <pathelement location="../hu.bme.mit.thesis.tmgen/bin"/>
         <fileset dir="${ECLIPSE_HOME}/plugins/" includes="*.jar"/>
     </path>
 
-    <path id="hu.bme.mit.thesis.ydm4bq.taragen.classpath.alljars">
-        <path refid="hu.bme.mit.thesis.ydm4bq.taragen.libraryclasspath.alljars"/>
+    <path id="hu.bme.mit.thesis.tmgen.classpath.alljars">
+        <path refid="hu.bme.mit.thesis.tmgen.libraryclasspath.alljars"/>
     </path>
 
     <!-- The default task with the jars used by this project -->
     <target name="generate">
-        <java classname="hu.bme.mit.thesis.ydm4bq.taragen.main.Generate" classpathref="hu.bme.mit.thesis.ydm4bq.taragen.classpath">
+        <java classname="hu.bme.mit.thesis.tmgen.main.Generate" classpathref="hu.bme.mit.thesis.tmgen.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>
@@ -68,7 +68,7 @@
         Keep in mind that having two versions of the same jar can create problems
     -->
     <target name="generate.alljars">
-        <java classname="hu.bme.mit.thesis.ydm4bq.taragen.main.Generate" classpathref="hu.bme.mit.thesis.ydm4bq.taragen.classpath">
+        <java classname="hu.bme.mit.thesis.tmgen.main.Generate" classpathref="hu.bme.mit.thesis.tmgen.classpath">
             <arg value="${model}"/>
             <arg value="${target}"/>
         </java>

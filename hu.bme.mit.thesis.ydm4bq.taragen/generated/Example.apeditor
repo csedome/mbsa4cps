@@ -1,0 +1,7 @@
+<apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
+  <damagescenarios name="Manipulate steering" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+  <damagescenarios name="Block steering" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+  <asset xsi:type="apeditor:Functionality" name="Actuation"/>
+  <asset xsi:type="apeditor:Component" name="CAN Connector" confidentiality="false" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="CAN Message" confidentiality="true" integrity="true" availability="true"/>
+</apeditor:ThreatModel>

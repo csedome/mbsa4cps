@@ -1,9 +1,9 @@
 [comment encoding = UTF-8 /]
 [module generate('http://www.eclipse.org/uml2/5.0.0/UML')]
 
-[template public generateCybersecurityDescriptor(m : Model)]
+[template public generateThreatModel(m : Model)]
 [comment @main/]
-[file ('Communication.apeditor', false, 'UTF-8')]
+[file ('Example.apeditor', false, 'UTF-8')]
 [comment HEADER START/]
 <apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
 [comment HEADER END/]
@@ -12,7 +12,8 @@
   [if (p.name = 'abuse_cases')]
     [for (u:UseCase | p.eContents(UseCase))]
       [if (not u.getAppliedStereotype('hu::damage_scenario').oclIsUndefined())]
-  <damagescenarios name="[u.name/]"/>
+  <damagescenarios name="[u.name/]" lossOfConfidentiality="[u.getValue(u.getAppliedStereotype('hu::damage_scenario'), 'lossOfConfidentiality')/]" lossOfIntegrity="[u.getValue(u.getAppliedStereotype('hu::damage_scenario'), 'lossOfIntegrity')/]" lossOfAvailability="[u.getValue(u.getAppliedStereotype('hu::damage_scenario'), 'lossOfAvailability')/]"/>
+[comment [u.getValue(u.getAppliedStereotype('hu::asset'), 'availability')/]
       [/if]
     [/for]
   [/if]
@@ -32,7 +33,7 @@
   [ if (p.name = 'item_definition')]
     [ for (c:Component | p.eContents(Component))]
       [ if (not c.getAppliedStereotype('hu::component').oclIsUndefined())]
-  <asset xsi:type="apeditor:Component" name="[c.name/]"/>
+  <asset xsi:type="apeditor:Component" name="[c.name/]" confidentiality="[c.getValue(c.getAppliedStereotype('hu::component'), 'confidentiality')/]" integrity="[c.getValue(c.getAppliedStereotype('hu::component'), 'integrity')/]" availability="[c.getValue(c.getAppliedStereotype('hu::component'), 'integrity')/]"/>
       [/if]
     [/for]
   [/if]
@@ -42,7 +43,7 @@
   [ if (p.name = 'item_definition')]
     [ for (c:Component | p.eContents(Component))]
       [ if (not c.getAppliedStereotype('hu::information').oclIsUndefined())]
-  <asset xsi:type="apeditor:Information" name="[c.name/]"/>
+  <asset xsi:type="apeditor:Information" name="[c.name/]" confidentiality="[c.getValue(c.getAppliedStereotype('hu::information'), 'confidentiality')/]" integrity="[c.getValue(c.getAppliedStereotype('hu::information'), 'integrity')/]" availability="[c.getValue(c.getAppliedStereotype('hu::information'), 'availability')/]"/>
       [/if]
     [/for]
   [/if]
