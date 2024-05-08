@@ -33,51 +33,61 @@ Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: bib/mybib.bib
 Warning--to sort, need author/key/name in Sowka
-Warning--to sort, need author/key/name in Salfer
-Warning--to sort, need author/key/name in Bryans
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1701 of file huplain.bst
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1701 of file huplain.bst
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1701 of file huplain.bst
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1875 of file huplain.bst
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1875 of file huplain.bst
+Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
+while executing---line 1875 of file huplain.bst
 You've used 12 entries,
             4991 wiz_defined-function locations,
-            1179 strings with 12910 characters,
-and the built_in function-call counts, 32405 in all, are:
-= -- 6326
-> -- 66
+            1181 strings with 13031 characters,
+and the built_in function-call counts, 33459 in all, are:
+= -- 6545
+> -- 78
 < -- 0
-+ -- 2428
-- -- 39
-* -- 289
-:= -- 827
++ -- 2550
+- -- 45
+* -- 295
+:= -- 833
 add.period$ -- 12
 call.type$ -- 12
 change.case$ -- 48
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 4962
-empty$ -- 532
-format.name$ -- 18
-if$ -- 6900
+cite$ -- 13
+duplicate$ -- 5196
+empty$ -- 530
+format.name$ -- 22
+if$ -- 7121
 int.to.chr$ -- 0
 int.to.str$ -- 12
 missing$ -- 0
-newline$ -- 141
-num.names$ -- 18
-pop$ -- 1409
+newline$ -- 143
+num.names$ -- 22
+pop$ -- 1404
 preamble$ -- 1
 purify$ -- 36
 quote$ -- 22
-skip$ -- 218
+skip$ -- 216
 stack$ -- 0
-substring$ -- 3918
-swap$ -- 3800
+substring$ -- 4013
+swap$ -- 3924
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 60
-warning$ -- 3
-while$ -- 96
+warning$ -- 1
+while$ -- 104
 width$ -- 14
-write$ -- 183
-(There were 3 warnings)
+write$ -- 187
+(There were 6 error messages)

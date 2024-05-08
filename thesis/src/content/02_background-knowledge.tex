@@ -112,7 +112,7 @@ Adott értéknek a tulajdonságait meghatározhatjuk az alábbi kérdések felte
     \item \textbf{Elszámoltathatóság}: Szükséges-e az adott értékhez való hozzáférések, módosulások visszakövethetősége?
 \end{itemize}
 
-A továbbiakban ezeket a modelleket fogom alkalmazni a kiberbiztonsági tulajdonságokként, azonban ezek módosíthatók, elhagyhatóak, cserélhetőek és bővíthetőek felhasználási környezetüktől függően.
+A továbbiakban ezeket a modelleket fogom alkalmazni a kiberbiztonsági tulajdonságokként, azonban ezek módosíthatók, elhagyhatóak, cserélhetőek és bővíthetőek felhasználási környezetüktől függően. Az én esetemben a CIA elegendő lesz, hiszen autóipari beágyazott rendszerekben a szoftver szinten azon tulajdonságok relevánsabbak. Az üzenet egyediségének hamisítása már az eredeti üzenet egyfajta sérülését vonja magával, ez a sértetlenség tulajdonság által már kezelve van. Az engedélyezhetőség pedig már bonyolultabb operációs rendszerek használatánál kerül elő, ami külön felhasználókat és hozzáféréseket tud definiálni. Ez bizonyos formában az autóiparban is fellelhető, de nem abban a komplexitásban mint Linux vagy Windows alapú rendszereknél. Az elszámoltathatóság szintén problémás mivel ennek a biztosítása, a beágyazott rendszerek limitált hardvererőforrásai miatt nem tud azzal a granularitással létezni, ahogy a hozzáférések számon lennének tartva IT rendszereknél.
 
 \subsection{STRIDE}
 A STRIDE egy modell, amely számítógépes kiberbiztonsági fenyegetések azonosítására lett kifejlesztve a Microsoft által 1999-ben. A nevét a hat fenyegetéstípusról kapta, ezek és a jelentésük:
@@ -143,6 +143,8 @@ Ez első ránézésre egy jó lehetséges kategorizálást ad meg nekünk fenyeg
 \end{table}
 
 Ebből jól látható, hogy az egyes értékekhez a tulajdonságaik alapján már azonosíthatjuk az azok kompromittálását célzó lehetséges fenyegetéseket.
+
+Ezekből én mivel csak a CIA tulajdonságait használom, az én esetemben a Tampering, Disclosure és Denial fenyegetések lesznek a tulajdonságokból származtatva.
 
 \section{Autóipari rendszerek általános tervezése és modellezése}
 
@@ -182,8 +184,6 @@ A SysML az UML nyelvi elemeinek egy részhalmazának egy további nyelvi elemekk
 
 Az én megoldásom végül az alap UML-hez tartalmaz egy kiberbiztonsági profilt, mivel a SysML bővítményei nem voltak használva. A termék leírására valamint a kockázatelemzés érték és károkozás definíciós szakaszára egy használati eset (use case) és egy komponens (component) diagrammot használok.
 
-
-
 \section{Felhasznált eszközök}
 
 \subsection{Papyrus}
@@ -191,8 +191,6 @@ Az én megoldásom végül az alap UML-hez tartalmaz egy kiberbiztonsági profil
 A Papyrus egy nyílt forráskódú UML 2 modellező eszköz. Ezt az eszközt fogom használni az értékek definiálására egy komponens diagramon valamint a károkozásokat egy használati eset diagramon.
 
 Ebben az eszközben továbbá definiálok egy kiberbiztonsági profilt ami bővítményeket tartalmaz komponensekhez és használati esetekhez.
-
-
 
 \subsection{Acceleo}
 
@@ -212,14 +210,14 @@ Az EMF szintén ad egy automatikusan generált kezelőfelületet a definiált mo
 
 Ezt a keretrendszert használtam a kiberbiztonsági elemző eszköz metamodelljének definiálására, valamint az eszköz kezelő felülete is a generált szerkesztő felületre épül.
 
-
-
 \subsection{Xtend}
 
 Az Xtend egy Java alapú programozási nyelv amelyet elsősorban kódgenerálási célokra lehet használni.
 
 Ezt a nyelvet használtam arra, hogy elkészítsem először a modellből való generálását a szabványos dokumentumoknak, valamint a támadási fák inicializálását is ebben készítettem.
 
-
-
 \subsection{Sirius}
+
+A Sirius egy nyílt forráskódú szoftverprojekt amelynek a célja, hogy könnyen lehessen grafikus felületeket létrehozni domén specifikus modellekhez Eclipse-ben.
+
+Ez a keretrendszer volt használva a támadási fák megjelenítéséhez és azok szerkesztésére használt grafikus felület létrehozására.

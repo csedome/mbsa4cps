@@ -98,8 +98,9 @@ ASPICE:
 \bibNewBlock Automotive spice® for cybersecurity process reference and
   assessment model, 2021.
 
-\bibitem{Salfer}
-Efficient attack forest construction for automotive on-board networks, 2014.
+\bibitem{Bryans}
+Nguyen H. N. Sabaliauskaite G. Shaikh S. Zhou~F. Bryans~J., Liew L.~S.:
+\bibNewBlock A template-based method for the generation of attack trees, 2020.
 
 \bibitem{Karahasanovic}
 Almgren~M. Karahasanovic~A., Kleberger~P.:
@@ -115,6 +116,11 @@ Khaled Karray:
 Alexander~Much Martin~Böhner, Alexander~Mattausch:
 \bibNewBlock Extending software architectures from safety to security, 2015.
 
+\bibitem{Salfer}
+Claudia~Eckert Martin~Salfer, Hendrik~Schweppe:
+\bibNewBlock Efficient attack forest construction for automotive on-board
+  networks, 2014.
+
 \bibitem{R155}
 United Nations:
 \bibNewBlock Un regulation no. 155 - cyber security and cyber security
@@ -128,9 +134,6 @@ A review on automatic generation of attack trees and its application to
 Christoph~Schmittner Sebastian~Chlup, Korbinian~Christl:
 \bibNewBlock Threatget: Towards automated attack tree analysis for automotive
   cybersecurity, 2022.
-
-\bibitem{Bryans}
-A template-based method for the generation of attack trees, 2020.
 
 \bibitem{Vivek}
 Tanvi~Tirthani Yashodhan~Vivek:
