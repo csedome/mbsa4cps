@@ -14,34 +14,34 @@
 \select@language {magyar} \contentsline {section}{\numberline {2.4}Autóipari rendszerek általános tervezése és modellezése}{7}{section.2.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.4.1}V-modell}{8}{subsection.2.4.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.4.2}UML és SysML}{8}{subsection.2.4.2}%
-\select@language {magyar} \contentsline {section}{\numberline {2.5}Felhasznált eszközök}{8}{section.2.5}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.1}Papyrus}{8}{subsection.2.5.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}Acceleo}{8}{subsection.2.5.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.3}Eclipse Modelling Framework}{8}{subsection.2.5.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.4}Xtend}{8}{subsection.2.5.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.5}Sirius}{8}{subsection.2.5.5}%
-\select@language {magyar} \contentsline {chapter}{\numberline {3}Kapcsolódó tanulmányok}{9}{chapter.3}%
-\select@language {magyar} \contentsline {section}{\numberline {3.1}Fenyegetésmodellezés}{9}{section.3.1}%
-\select@language {magyar} \contentsline {section}{\numberline {3.2}Kiberbiztonság és üzembiztonság kapcsolata}{10}{section.3.2}%
-\select@language {magyar} \contentsline {section}{\numberline {3.3}Támadási fa generálás}{12}{section.3.3}%
-\select@language {magyar} \contentsline {chapter}{\numberline {4}A kiberbiztonsági analízis metodológiája}{13}{chapter.4}%
-\select@language {magyar} \contentsline {section}{\numberline {4.1}Áttekintés}{13}{section.4.1}%
-\select@language {magyar} \contentsline {section}{\numberline {4.2}Termékleírás és fenyegetésmodell származtatása}{13}{section.4.2}%
-\select@language {magyar} \contentsline {section}{\numberline {4.3}Fenyegetésmodellezés}{13}{section.4.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}Károkozások attributálása}{13}{subsection.4.3.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}Értékek attributálása és dependenciák meghatározása}{13}{subsection.4.3.2}%
-\select@language {magyar} \contentsline {section}{\numberline {4.4}Támadási fák inicializálása és szerkesztése}{13}{section.4.4}%
-\select@language {magyar} \contentsline {section}{\numberline {4.5}Dokumentumok generálása és manuális analízis}{13}{section.4.5}%
-\select@language {magyar} \contentsline {chapter}{\numberline {5}A kiberbiztonsági analízis megvalósítása}{14}{chapter.5}%
-\select@language {magyar} \contentsline {section}{\numberline {5.1}Kiberbiztonsági modell származtatása}{14}{section.5.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}Kiberbiztonsági profil}{14}{subsection.5.1.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.1.2}Fenyegetésmodell generátor}{14}{subsection.5.1.2}%
-\select@language {magyar} \contentsline {section}{\numberline {5.2}Fenyegetésmodellező eszköz}{14}{section.5.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}Metamodel}{14}{subsection.5.2.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.2.2}Fenyegetésmodell szerkesztő felület}{14}{subsection.5.2.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.2.3}Támadási fák inicializálása}{14}{subsection.5.2.3}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.2.4}Támadási fa szerkesztő felület}{14}{subsection.5.2.4}%
-\select@language {magyar} \contentsline {subsection}{\numberline {5.2.5}Dokumentum generátor}{14}{subsection.5.2.5}%
-\select@language {magyar} \contentsline {chapter}{\numberline {6}Esettanulmány}{15}{chapter.6}%
-\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{16}{chapter.7}%
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{17}{chapter.7}%
+\select@language {magyar} \contentsline {section}{\numberline {2.5}Felhasznált eszközök}{9}{section.2.5}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.1}Papyrus}{9}{subsection.2.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}Acceleo}{9}{subsection.2.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.3}Eclipse Modelling Framework}{9}{subsection.2.5.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.4}Xtend}{9}{subsection.2.5.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.5}Sirius}{9}{subsection.2.5.5}%
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Kapcsolódó tanulmányok}{10}{chapter.3}%
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Fenyegetésmodellezés}{10}{section.3.1}%
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Kiberbiztonság és üzembiztonság kapcsolata}{11}{section.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {3.3}Támadási fa generálás}{13}{section.3.3}%
+\select@language {magyar} \contentsline {chapter}{\numberline {4}A kiberbiztonsági analízis metodológiája}{14}{chapter.4}%
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Áttekintés}{14}{section.4.1}%
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Termékleírás és fenyegetésmodell származtatása}{14}{section.4.2}%
+\select@language {magyar} \contentsline {section}{\numberline {4.3}Fenyegetésmodellezés}{14}{section.4.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}Károkozások attributálása}{14}{subsection.4.3.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.2}Értékek attributálása és dependenciák meghatározása}{14}{subsection.4.3.2}%
+\select@language {magyar} \contentsline {section}{\numberline {4.4}Támadási fák inicializálása és szerkesztése}{14}{section.4.4}%
+\select@language {magyar} \contentsline {section}{\numberline {4.5}Dokumentumok generálása és manuális analízis}{14}{section.4.5}%
+\select@language {magyar} \contentsline {chapter}{\numberline {5}A kiberbiztonsági analízis megvalósítása}{15}{chapter.5}%
+\select@language {magyar} \contentsline {section}{\numberline {5.1}Kiberbiztonsági modell származtatása}{15}{section.5.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.1}Kiberbiztonsági profil}{15}{subsection.5.1.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.1.2}Fenyegetésmodell generátor}{15}{subsection.5.1.2}%
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Fenyegetésmodellező eszköz}{15}{section.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}Metamodel}{15}{subsection.5.2.1}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.2}Fenyegetésmodell szerkesztő felület}{15}{subsection.5.2.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.3}Támadási fák inicializálása}{15}{subsection.5.2.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.4}Támadási fa szerkesztő felület}{15}{subsection.5.2.4}%
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.5}Dokumentum generátor}{15}{subsection.5.2.5}%
+\select@language {magyar} \contentsline {chapter}{\numberline {6}Esettanulmány}{16}{chapter.6}%
+\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{17}{chapter.7}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{18}{chapter.7}%

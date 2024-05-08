@@ -165,9 +165,61 @@ Szintén érdemes itt megjegyezni, hogy az általam javasolt metodológia egyfaj
 
 \subsection{UML és SysML}
 
+A komplex E/E architektúrák esetén, mint amilyenek az autóipari beágyazott rendszerek, jellemző valamilyen formában a rendszermodellek jelenléte és karbantartása a termék életciklusa alatt. Erre elsősorban a SysML (System Modeling Language) van használva, ami egy bővítése az UML-nek (Unified Modeling Language).\\
+
+% UML
+Az UML egy általános felhasználású grafikus modellezési nyelv amelynek a célja rendszerek modellezése, de használják gazdasági területeken vagy szoftver tervezésnél is.
+
+Az UML több diagram típust különböztet meg, azokat elsősorban két kategóriába sorolhatjuk, az egyik a strukturális a másik pedig a viselkedési diagramok. Strukturálishoz tartoznak az osztály, komponens, kompozit és profil diagramok, a viselkedéshez pedig az aktivitás, szekvencia, interakció vagy use case (használati eset) diagramok.
+
+Az UML szintén támogatja az egy adott doménre való szabását a modellezési nyelvnek, ezt profilok definiálásával lehet megtenni. A profilokra érdemes úgy gondolni mint egyfajta bővítmények, amelyeket bizonyos modell elemekre tudunk hozzászabni.
+
+% SysML - subset
+
+A SysML az UML nyelvi elemeinek egy részhalmazának egy további nyelvi elemekkel bővített verziója. Ezeket a bővítéseket egy SysML profillal implementálják és elsősorban ez a nyelv van használva komplex hardver-szoftver rendszerek modellezésére.
+
+% Használat
+
+Az én megoldásom végül az alap UML-hez tartalmaz egy kiberbiztonsági profilt, mivel a SysML bővítményei nem voltak használva. A termék leírására valamint a kockázatelemzés érték és károkozás definíciós szakaszára egy használati eset (use case) és egy komponens (component) diagrammot használok.
+
+
+
 \section{Felhasznált eszközök}
+
 \subsection{Papyrus}
+
+A Papyrus egy nyílt forráskódú UML 2 modellező eszköz. Ezt az eszközt fogom használni az értékek definiálására egy komponens diagramon valamint a károkozásokat egy használati eset diagramon.
+
+Ebben az eszközben továbbá definiálok egy kiberbiztonsági profilt ami bővítményeket tartalmaz komponensekhez és használati esetekhez.
+
+
+
 \subsection{Acceleo}
+
+Az Acceleo egy nyílt forráskódú Model-2-Text (M2T) eszköz, amellyel a Papyrus-ban definiált modellekből fogom generálni a kiberbiztonsági elemző eszköz kiinduló modelljét. Más szóval ezzel az eszközzel származtatom a rendszermodellből a kiberbiztonsági modellt.
+
+Azért eset a választásom erre az alkalmazásra az Xtend helyett, mivel az integrációja a Papyrus eszközzel sokkal jobban működik, illetve minimális komplexitású kódgenerálást fogok csak ezzel végezni.
+
+
+
 \subsection{Eclipse Modelling Framework}
+
+Az Eclipse Modelling Framework, vagy röviden EMF egy modellezési keretrendszer ami arra ad támogatást, hogy könnyen lehessen modellező eszközöket, majd ahhoz kódgenerátor alkalmazásokat fejleszteni.
+
+Az EMF támogatja modellek definiálását, majd azokból automatikusan Java kódot származtat, ezzel elősegítve a modell könnyebb transzformációját, módosítását és abból való származtatást.
+
+Az EMF szintén ad egy automatikusan generált kezelőfelületet a definiált modell szerkesztésére, tartalommal feltöltésére.
+
+Ezt a keretrendszert használtam a kiberbiztonsági elemző eszköz metamodelljének definiálására, valamint az eszköz kezelő felülete is a generált szerkesztő felületre épül.
+
+
+
 \subsection{Xtend}
+
+Az Xtend egy Java alapú programozási nyelv amelyet elsősorban kódgenerálási célokra lehet használni.
+
+Ezt a nyelvet használtam arra, hogy elkészítsem először a modellből való generálását a szabványos dokumentumoknak, valamint a támadási fák inicializálását is ebben készítettem.
+
+
+
 \subsection{Sirius}

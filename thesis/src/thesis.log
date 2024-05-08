@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  6 MAY 2024 20:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  8 MAY 2024 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -783,36 +783,40 @@ File: figures/02_ASPICE.png Graphic file (type png)
 <use figures/02_ASPICE.png>
 Package pdftex.def Info: figures/02_ASPICE.png  used on input line 159.
 (pdftex.def)             Requested size: 426.79134pt x 215.12354pt.
-) [8 <./figures/02_ASPICE.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
+
+ []
+
+[8 <./figures/02_ASPICE.png>]) [9]
 \openout2 = `content/03_related-studies.aux'.
 
-
-(content/03_related-studies.tex
+ (content/03_related-studies.tex
 3. fejezet.
-[9
+[10
 
 
 
 
 ]
-<figures/03_MA.png, id=313, 573.14125pt x 415.5525pt>
+<figures/03_MA.png, id=316, 573.14125pt x 415.5525pt>
 File: figures/03_MA.png Graphic file (type png)
 <use figures/03_MA.png>
 Package pdftex.def Info: figures/03_MA.png  used on input line 18.
 (pdftex.def)             Requested size: 426.79134pt x 309.44432pt.
- [10 <./figures/03_MA.png>]
-<figures/03_CHULP.png, id=328, 305.64188pt x 487.06969pt>
+ [11 <./figures/03_MA.png>]
+<figures/03_CHULP.png, id=331, 305.64188pt x 487.06969pt>
 File: figures/03_CHULP.png Graphic file (type png)
 <use figures/03_CHULP.png>
 Package pdftex.def Info: figures/03_CHULP.png  used on input line 35.
 (pdftex.def)             Requested size: 213.39566pt x 340.06203pt.
- [11 <./figures/03_CHULP.png>]) [12]
+ [12 <./figures/03_CHULP.png>]) [13]
 \openout2 = `content/04_analysis-method.aux'.
 
 
 (content/04_analysis-method.tex
 4. fejezet.
-) [13
+) [14
 
 
 
@@ -822,7 +826,7 @@ Package pdftex.def Info: figures/03_CHULP.png  used on input line 35.
 
  (content/05_analysis-tool.tex
 5. fejezet.
-) [14
+) [15
 
 
 
@@ -832,7 +836,7 @@ Package pdftex.def Info: figures/03_CHULP.png  used on input line 35.
 
  (content/06_case-study.tex
 6. fejezet.
-) [15
+) [16
 
 
 
@@ -842,7 +846,7 @@ Package pdftex.def Info: figures/03_CHULP.png  used on input line 35.
 
  (content/07_summary.tex
 7. fejezet.
-) [16
+) [17
 
 
 
@@ -851,7 +855,7 @@ Package pdftex.def Info: figures/03_CHULP.png  used on input line 35.
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
- [17
+ [18
 
 
 
@@ -866,8 +870,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  16742 strings out of 478582
- 283014 string characters out of 2843400
- 583517 words of memory out of 3000000
+ 279723 string characters out of 2843400
+ 583518 words of memory out of 3000000
  34533 multiletter control sequences out of 15000+600000
  523126 words of font info for 61 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -881,9 +885,9 @@ fb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
 10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb>
-Output written on thesis.pdf (23 pages, 435858 bytes).
+Output written on thesis.pdf (24 pages, 438851 bytes).
 PDF statistics:
- 414 PDF objects out of 1000 (max. 8388607)
+ 417 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
  397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
