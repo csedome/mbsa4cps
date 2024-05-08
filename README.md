@@ -7,6 +7,8 @@ This project is a simple solution for papyrus based models. This project holds a
 
 The cybersecurity profile is used to define stereotypes with attributes and later attach these stereotypes to system model elements.
 
+Functionalities are handled separately from assets here, because they are not meant to hold CIA properties, since their property will be based on the presence of a damage scenario. This is all part of the apE. 
+
 <p><img src="resources/profile_diagram.PNG" width="500">
 
 ## Abuse case diagram
