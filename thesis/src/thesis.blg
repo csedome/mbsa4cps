@@ -1,0 +1,83 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: huplain.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+A level-1 auxiliary file: include/titlepage.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: include/declaration.aux
+Reallocating 'name_of_file' (item size: 1) to 24 items.
+A level-1 auxiliary file: content/00_abstract.aux
+Reallocating 'name_of_file' (item size: 1) to 28 items.
+A level-1 auxiliary file: content/01_introduction.aux
+Reallocating 'name_of_file' (item size: 1) to 36 items.
+A level-1 auxiliary file: content/02_background-knowledge.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: content/03_related-studies.aux
+Reallocating 'name_of_file' (item size: 1) to 31 items.
+A level-1 auxiliary file: content/04_analysis-method.aux
+Reallocating 'name_of_file' (item size: 1) to 29 items.
+A level-1 auxiliary file: content/05_analysis-tool.aux
+Reallocating 'name_of_file' (item size: 1) to 26 items.
+A level-1 auxiliary file: content/06_case-study.aux
+Reallocating 'name_of_file' (item size: 1) to 23 items.
+A level-1 auxiliary file: content/07_summary.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: bib/mybib.bib
+Warning--to sort, need author/key/name in Sowka
+Warning--to sort, need author/key/name in Salfer
+Warning--to sort, need author/key/name in Bryans
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+You've used 12 entries,
+            4991 wiz_defined-function locations,
+            1179 strings with 12910 characters,
+and the built_in function-call counts, 32405 in all, are:
+= -- 6326
+> -- 66
+< -- 0
++ -- 2428
+- -- 39
+* -- 289
+:= -- 827
+add.period$ -- 12
+call.type$ -- 12
+change.case$ -- 48
+chr.to.int$ -- 0
+cite$ -- 15
+duplicate$ -- 4962
+empty$ -- 532
+format.name$ -- 18
+if$ -- 6900
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 0
+newline$ -- 141
+num.names$ -- 18
+pop$ -- 1409
+preamble$ -- 1
+purify$ -- 36
+quote$ -- 22
+skip$ -- 218
+stack$ -- 0
+substring$ -- 3918
+swap$ -- 3800
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 60
+warning$ -- 3
+while$ -- 96
+width$ -- 14
+write$ -- 183
+(There were 3 warnings)
