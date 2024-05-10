@@ -3,6 +3,10 @@ My masters thesis project with the name "Model-based security analysis of Cyber-
 
 This project is a simple solution for papyrus based models. This project holds a (i) UML profile made for cybersecurity, (ii) a simplified model containing a (ab)use case diagram and a component diagram, (iii) a code generator made using Acceleo, that generate a threat model that will be used by the security analysis tool (https://github.com/csedome/apE) that is also developed as part of my thesis project.
 
+## Thesis PDF
+
+https://github.com/csedome/mbsa4cps/blob/main/thesis/src/thesis.pdf
+
 ## Cybersecurity profile
 
 The cybersecurity profile is used to define stereotypes with attributes and later attach these stereotypes to system model elements.
