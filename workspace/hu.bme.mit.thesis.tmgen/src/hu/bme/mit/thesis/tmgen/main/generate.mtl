@@ -3,7 +3,7 @@
 
 [template public generateThreatModel(m : Model)]
 [comment @main/]
-[file ('Example.apeditor', false, 'UTF-8')]
+[file (m.name + '.apeditor', false, 'UTF-8')]
 [comment HEADER START/]
 <apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
 [comment HEADER END/]

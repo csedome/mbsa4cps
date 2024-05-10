@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26 ../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_xNci8Qr6Ee-FqPpmzDGbRQ">
-  <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="model">
+  <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="Actuation">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_csu24PXQEe6yUs2YwO9X6Q">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
