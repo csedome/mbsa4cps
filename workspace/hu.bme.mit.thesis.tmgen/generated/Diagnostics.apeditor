@@ -1,0 +1,13 @@
+<apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
+  <damagescenarios name="DS-CRYPTM-02 Remove cryptographic material" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="true"/>
+  <damagescenarios name="DS-CRYPTM-00 Leak cryptographic material" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+  <asset xsi:type="apeditor:Functionality" name="Software Update"/>
+  <asset xsi:type="apeditor:Functionality" name="Crypto Material Management"/>
+  <asset xsi:type="apeditor:Functionality" name="Diagnostic Authentication"/>
+  <asset xsi:type="apeditor:Component" name="CAN Connector" confidentiality="false" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="CAN Message" confidentiality="true" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="UDS Message" confidentiality="true" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="Software" confidentiality="true" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="Cryptographic Material" confidentiality="true" integrity="true" availability="true"/>
+  <asset xsi:type="apeditor:Information" name="Diagnostic Data" confidentiality="true" integrity="false" availability="false"/>
+</apeditor:ThreatModel>

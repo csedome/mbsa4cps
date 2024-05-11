@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26 ../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_xNci8Qr6Ee-FqPpmzDGbRQ">
-  <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="Actuation">
+  <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="Calibration">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_csu24PXQEe6yUs2YwO9X6Q">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
     </packageImport>
@@ -9,9 +9,8 @@
         <body>Abuse case diagram: A way of modelling misuses of the product similiarly to regular use cases.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Actor" xmi:id="_QE8agPXREe6DI8aRwY-w-w" name="Attacker"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_RtY_APXREe6DI8aRwY-w-w" name="Effect steering behavior"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Us2ZwPXREe6DI8aRwY-w-w" name="Manipulate steering" visibility="package"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_V7EgYPXREe6DI8aRwY-w-w" name="Block steering"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_RtY_APXREe6DI8aRwY-w-w" name="Tune system parameters"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_Us2ZwPXREe6DI8aRwY-w-w" name="DS-SECDIAG-02 Brick ECU" visibility="package"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_Yv-Q8PXREe6DI8aRwY-w-w" memberEnd="_YwGMwPXREe6DI8aRwY-w-w _YwGz0PXREe6DI8aRwY-w-w">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YwCiYPXREe6DI8aRwY-w-w" source="org.eclipse.papyrus">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YwCiYfXREe6DI8aRwY-w-w" key="nature" value="UML_Nature"/>
@@ -26,21 +25,54 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_ZaAFYfXREe6DI8aRwY-w-w" name="take over steering" type="_Us2ZwPXREe6DI8aRwY-w-w" association="_ZZ7M4PXREe6DI8aRwY-w-w"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_ZaAscPXREe6DI8aRwY-w-w" name="effect steering behavior" type="_RtY_APXREe6DI8aRwY-w-w" association="_ZZ7M4PXREe6DI8aRwY-w-w"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_aEt2UPXREe6DI8aRwY-w-w" memberEnd="_aEvrgfXREe6DI8aRwY-w-w _aEwSkPXREe6DI8aRwY-w-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aEvEcPXREe6DI8aRwY-w-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aEvrgPXREe6DI8aRwY-w-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aEvrgfXREe6DI8aRwY-w-w" name="block steering" type="_V7EgYPXREe6DI8aRwY-w-w" association="_aEt2UPXREe6DI8aRwY-w-w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aEwSkPXREe6DI8aRwY-w-w" name="effect steering behavior" type="_RtY_APXREe6DI8aRwY-w-w" association="_aEt2UPXREe6DI8aRwY-w-w"/>
-      </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_z-TtkPddEe6_stnQ67IcSQ" name="item_definition">
       <ownedComment xmi:type="uml:Comment" xmi:id="_PKwuMPqHEe6laZ0xGLbPGw">
         <body>ISO21434-WP-09-01 Item definition: Component diagrams are common in the automotive industry to conceptualize parts of the system in pre-development. As the TARA is a primarily concept phase activity we can use already existing component diagrams and add desired stereotypes to different components.</body>
       </ownedComment>
-      <packagedElement xmi:type="uml:Component" xmi:id="_VNpFUPtFEe6M-OxlxbXykg" name="Actuation"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_VNpFUPtFEe6M-OxlxbXykg" name="Debug"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_WwjpkPtFEe6M-OxlxbXykg" name="CAN Message"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_emRooPtFEe6M-OxlxbXykg" name="CAN Connector"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_wjsckA8yEe-Nre8cfFN6mA" name="Calibrate"/>
+      <packagedElement xmi:type="uml:Component" xmi:id="_M2lDYA8zEe-Nre8cfFN6mA" name="Software"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_-XjVYA8vEe-Nre8cfFN6mA" name="Perform debug activity"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_EkbHUA8wEe-Nre8cfFN6mA" memberEnd="_EkcVcg8wEe-Nre8cfFN6mA _Ekc8gA8wEe-Nre8cfFN6mA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EkcVcA8wEe-Nre8cfFN6mA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EkcVcQ8wEe-Nre8cfFN6mA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_EkcVcg8wEe-Nre8cfFN6mA" name="perform debug activity" type="_-XjVYA8vEe-Nre8cfFN6mA" association="_EkbHUA8wEe-Nre8cfFN6mA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Ekc8gA8wEe-Nre8cfFN6mA" name="attacker" type="_QE8agPXREe6DI8aRwY-w-w" association="_EkbHUA8wEe-Nre8cfFN6mA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_HWPusA8wEe-Nre8cfFN6mA" name="DS-SECCALIB-00 Leak ECU data"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_KR_uIA8wEe-Nre8cfFN6mA" memberEnd="_KSAVMg8wEe-Nre8cfFN6mA _KSA8QA8wEe-Nre8cfFN6mA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KSAVMA8wEe-Nre8cfFN6mA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KSAVMQ8wEe-Nre8cfFN6mA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KSAVMg8wEe-Nre8cfFN6mA" name="perform debug activity" type="_-XjVYA8vEe-Nre8cfFN6mA" association="_KR_uIA8wEe-Nre8cfFN6mA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_KSA8QA8wEe-Nre8cfFN6mA" name="leak ecu data" type="_HWPusA8wEe-Nre8cfFN6mA" association="_KR_uIA8wEe-Nre8cfFN6mA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_kg310A8wEe-Nre8cfFN6mA" name="DS-SECCALIB-01 Change ECU data"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tlOyQA8wEe-Nre8cfFN6mA" memberEnd="_tlQAYQ8wEe-Nre8cfFN6mA _tlQAYg8wEe-Nre8cfFN6mA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tlPZUA8wEe-Nre8cfFN6mA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tlQAYA8wEe-Nre8cfFN6mA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tlQAYQ8wEe-Nre8cfFN6mA" name="change ecu data" type="_kg310A8wEe-Nre8cfFN6mA" association="_tlOyQA8wEe-Nre8cfFN6mA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tlQAYg8wEe-Nre8cfFN6mA" name="perform debug activity" type="_-XjVYA8vEe-Nre8cfFN6mA" association="_tlOyQA8wEe-Nre8cfFN6mA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_udIqoA8wEe-Nre8cfFN6mA" memberEnd="_udIqow8wEe-Nre8cfFN6mA _udMVAA8wEe-Nre8cfFN6mA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_udIqoQ8wEe-Nre8cfFN6mA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_udIqog8wEe-Nre8cfFN6mA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_udIqow8wEe-Nre8cfFN6mA" name="brick ecu" type="_Us2ZwPXREe6DI8aRwY-w-w" association="_udIqoA8wEe-Nre8cfFN6mA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_udMVAA8wEe-Nre8cfFN6mA" name="perform debug activity" type="_-XjVYA8vEe-Nre8cfFN6mA" association="_udIqoA8wEe-Nre8cfFN6mA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ATIfAA81Ee-Nre8cfFN6mA" memberEnd="_ATKUMQ81Ee-Nre8cfFN6mA _ATKUMg81Ee-Nre8cfFN6mA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ATJtIA81Ee-Nre8cfFN6mA" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ATKUMA81Ee-Nre8cfFN6mA" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ATKUMQ81Ee-Nre8cfFN6mA" name="ds-seccalib-03 change ecu data" type="_kg310A8wEe-Nre8cfFN6mA" association="_ATIfAA81Ee-Nre8cfFN6mA"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_ATKUMg81Ee-Nre8cfFN6mA" name="tune system parameters" type="_RtY_APXREe6DI8aRwY-w-w" association="_ATIfAA81Ee-Nre8cfFN6mA"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pZdbgAr1Ee-FqPpmzDGbRQ">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gXerYAr6Ee-FqPpmzDGbRQ" source="PapyrusVersion">
@@ -56,10 +88,11 @@
       <appliedProfile xmi:type="uml:Profile" href="../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_-WiXkPdbEe6_stnQ67IcSQ"/>
     </profileApplication>
   </uml:Model>
-  <hu:damage_scenario xmi:id="_LZ73EAhgEe-Xebjf9hmNgg" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" lossOfAvailability="true"/>
   <hu:functionality xmi:id="_fPz1UAhgEe-Xebjf9hmNgg" base_Component="_VNpFUPtFEe6M-OxlxbXykg"/>
   <hu:component xmi:id="__Gw_0AhgEe-Xebjf9hmNgg" integrity="true" availability="true" base_Component="_emRooPtFEe6M-OxlxbXykg"/>
   <hu:information xmi:id="__uCbMAhgEe-Xebjf9hmNgg" confidentiality="true" integrity="true" availability="true" base_Component="_WwjpkPtFEe6M-OxlxbXykg"/>
-  <hu:damage_scenario xmi:id="_6T0D0Ar1Ee-FqPpmzDGbRQ" base_UseCase="_Us2ZwPXREe6DI8aRwY-w-w" lossOfIntegrity="true"/>
-  <hu:damage_scenario xmi:id="_ByCv8Ar2Ee-FqPpmzDGbRQ" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" lossOfAvailability="true"/>
+  <hu:damage_scenario xmi:id="_6T0D0Ar1Ee-FqPpmzDGbRQ" base_UseCase="_Us2ZwPXREe6DI8aRwY-w-w" lossOfIntegrity="true" lossOfAvailability="true"/>
+  <hu:damage_scenario xmi:id="_L_1I8A8wEe-Nre8cfFN6mA" base_UseCase="_HWPusA8wEe-Nre8cfFN6mA" lossOfConfidentiality="true"/>
+  <hu:functionality xmi:id="_Kxls0A8zEe-Nre8cfFN6mA" base_Component="_wjsckA8yEe-Nre8cfFN6mA"/>
+  <hu:information xmi:id="_SUgrsA8zEe-Nre8cfFN6mA" base_Component="_M2lDYA8zEe-Nre8cfFN6mA"/>
 </xmi:XMI>
