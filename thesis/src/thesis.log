@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  8 MAY 2024 19:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  10 MAY 2024 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,7 +654,7 @@ LaTeX Info: Redefining \mit on input line 578.
 
 (include/titlepage.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 1.
-<figures/00_BME.pdf, id=190, 705.63625pt x 188.705pt>
+<figures/00_BME.pdf, id=206, 705.63625pt x 188.705pt>
 File: figures/00_BME.pdf Graphic file (type pdf)
 <use figures/00_BME.pdf>
 Package pdftex.def Info: figures/00_BME.pdf  used on input line 7.
@@ -778,7 +778,7 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 ] [4] [5] [6] [7]
-<figures/02_ASPICE.png, id=295, 597.432pt x 301.125pt>
+<figures/02_ASPICE.png, id=315, 597.432pt x 301.125pt>
 File: figures/02_ASPICE.png Graphic file (type png)
 <use figures/02_ASPICE.png>
 Package pdftex.def Info: figures/02_ASPICE.png  used on input line 161.
@@ -808,7 +808,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<figures/03_MA.png, id=318, 573.14125pt x 415.5525pt>
+<figures/03_MA.png, id=338, 573.14125pt x 415.5525pt>
 File: figures/03_MA.png Graphic file (type png)
 <use figures/03_MA.png>
 Package pdftex.def Info: figures/03_MA.png  used on input line 30.
@@ -823,17 +823,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<figures/03_CHULP.png, id=335, 305.64188pt x 487.06969pt>
+<figures/03_CHULP.png, id=355, 305.64188pt x 487.06969pt>
 File: figures/03_CHULP.png Graphic file (type png)
 <use figures/03_CHULP.png>
 Package pdftex.def Info: figures/03_CHULP.png  used on input line 55.
 (pdftex.def)             Requested size: 213.39566pt x 340.06203pt.
-<figures/03_CHULP_EDD.png, id=338, 460.72125pt x 305.34074pt>
+<figures/03_CHULP_EDD.png, id=358, 460.72125pt x 305.34074pt>
 File: figures/03_CHULP_EDD.png Graphic file (type png)
 <use figures/03_CHULP_EDD.png>
 Package pdftex.def Info: figures/03_CHULP_EDD.png  used on input line 62.
 (pdftex.def)             Requested size: 355.65944pt x 235.70946pt.
-<figures/03_CHULP_AT.png, id=343, 449.88075pt x 203.5605pt>
+<figures/03_CHULP_AT.png, id=363, 449.88075pt x 203.5605pt>
 File: figures/03_CHULP_AT.png Graphic file (type png)
 <use figures/03_CHULP_AT.png>
 Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
@@ -844,27 +844,37 @@ Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
 
  (content/04_analysis-method.tex
 4. fejezet.
+<figures/04_overview.png, id=395, 583.42969pt x 633.11531pt>
+File: figures/04_overview.png Graphic file (type png)
+<use figures/04_overview.png>
+Package pdftex.def Info: figures/04_overview.png  used on input line 23.
+(pdftex.def)             Requested size: 369.88582pt x 401.39581pt.
 ) [16
 
 
 
 
-]
+] [17 <./figures/04_overview.png>]
 \openout2 = `content/05_analysis-tool.aux'.
 
  (content/05_analysis-tool.tex
 5. fejezet.
-) [17
+<figures/05_overview.png, id=405, 1005.7575pt x 1115.16624pt>
+File: figures/05_overview.png Graphic file (type png)
+<use figures/05_overview.png>
+Package pdftex.def Info: figures/05_overview.png  used on input line 9.
+(pdftex.def)             Requested size: 369.88582pt x 410.12071pt.
+) [18
 
 
 
 
-]
+] [19 <./figures/05_overview.png>]
 \openout2 = `content/06_case-study.aux'.
 
  (content/06_case-study.tex
 6. fejezet.
-) [18
+) [20
 
 
 
@@ -874,7 +884,7 @@ Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
 
  (content/07_summary.tex
 7. fejezet.
-) [19
+) [21
 
 
 
@@ -883,7 +893,7 @@ Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
- [20
+ [22
 
 
 
@@ -893,39 +903,29 @@ Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
 (content/03_related-studies.aux) (content/04_analysis-method.aux)
 (content/05_analysis-tool.aux) (content/06_case-study.aux)
 (content/07_summary.aux))
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: E8AD76D6D56CD8B2231D05341DC5B9E6;8982
-(rerunfilecheck)             After:  5D895F9656A319708CD2A39581DD1547;9015.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 3DC70AE43DE2C3BD1131D221F719D9FA;9650.
  ) 
 Here is how much of TeX's memory you used:
- 16762 strings out of 478582
- 280192 string characters out of 2843400
- 583680 words of memory out of 3000000
- 34547 multiletter control sequences out of 15000+600000
+ 16786 strings out of 478582
+ 280732 string characters out of 2843400
+ 583806 words of memory out of 3000000
+ 34565 multiletter control sequences out of 15000+600000
  523126 words of font info for 61 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 65i,8n,66p,1158b,526s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{subsection.4.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{
-C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:
-/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><
-C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb
-><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.
-pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10
-.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr1
-2.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
-i10.pfb>
-Output written on thesis.pdf (26 pages, 490575 bytes).
+ 65i,8n,66p,1158b,508s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc
+}{C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<
+C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb
+><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.p
+fb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
+0.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr
+10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
+mri10.pfb>
+Output written on thesis.pdf (28 pages, 555438 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 407 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 474 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
