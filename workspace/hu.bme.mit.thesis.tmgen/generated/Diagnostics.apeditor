@@ -1,6 +1,13 @@
 <apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
   <damagescenarios name="DS-CRYPTM-02 Remove cryptographic material" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="true"/>
   <damagescenarios name="DS-CRYPTM-00 Leak cryptographic material" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+  <damagescenarios name="DS-CRYPTM-01 Change cryptographic material" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+  <damagescenarios name="DS-SECSW-00 Leak software" lossOfConfidentiality="true" lossOfIntegrity="false" lossOfAvailability="false"/>
+  <damagescenarios name="DS-SECSW-01 Change software" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+  <damagescenarios name="DS-SECSW-02 Remove software" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+  <damagescenarios name="DS-SECDIAG-00 Leak unauthorized data" lossOfConfidentiality="true" lossOfIntegrity="false" lossOfAvailability="false"/>
+  <damagescenarios name="DS-SECDIAG-01 Access unauthorized functionality" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+  <damagescenarios name="DS-SECDIAG-02 Block authentication attempts" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
   <asset xsi:type="apeditor:Functionality" name="Software Update"/>
   <asset xsi:type="apeditor:Functionality" name="Crypto Material Management"/>
   <asset xsi:type="apeditor:Functionality" name="Diagnostic Authentication"/>
