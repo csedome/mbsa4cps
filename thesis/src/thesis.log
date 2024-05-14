@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  11 MAY 2024 19:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  14 MAY 2024 20:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -898,19 +898,62 @@ Package pdftex.def Info: figures/04_attack_tree.png  used on input line 125.
 <figures/05_overview.png, id=441, 1005.7575pt x 1115.16624pt>
 File: figures/05_overview.png Graphic file (type png)
 <use figures/05_overview.png>
-Package pdftex.def Info: figures/05_overview.png  used on input line 9.
+Package pdftex.def Info: figures/05_overview.png  used on input line 13.
 (pdftex.def)             Requested size: 369.88582pt x 410.12071pt.
-) [23
+[23
 
 
 
 
-] [24 <./figures/05_overview.png>]
+]
+<figures/05_Profile_Diagram.PNG, id=445, 753.81625pt x 361.35pt>
+File: figures/05_Profile_Diagram.PNG Graphic file (type png)
+<use figures/05_Profile_Diagram.PNG>
+Package pdftex.def Info: figures/05_Profile_Diagram.PNG  used on input line 38.
+
+(pdftex.def)             Requested size: 369.88582pt x 177.30565pt.
+ [24 <./figures/05_overview.png>]
+<figures/05_package_tmgen.png, id=452, 623.32875pt x 372.39125pt>
+File: figures/05_package_tmgen.png Graphic file (type png)
+<use figures/05_package_tmgen.png>
+Package pdftex.def Info: figures/05_package_tmgen.png  used on input line 51.
+(pdftex.def)             Requested size: 369.88582pt x 220.98175pt.
+ [25 <./figures/05_Profile_Diagram.PNG> <./figures/05_package_tmgen.png>]
+<figures/05_package_apeditor.png, id=462, 595.47469pt x 533.74406pt>
+File: figures/05_package_apeditor.png Graphic file (type png)
+<use figures/05_package_apeditor.png>
+Package pdftex.def Info: figures/05_package_apeditor.png  used on input line 68
+.
+(pdftex.def)             Requested size: 369.88582pt x 331.53685pt.
+
+Overfull \hbox (2.02328pt too wide) in paragraph at lines 75--76
+[]\T1/lmr/m/n/10.95 A \T1/lmr/bx/n/10.95 hu.bme.mit.thesis.apeditor.edit \T1/lm
+r/m/n/10.95 il-let-ve a \T1/lmr/bx/n/10.95 hu.bme.mit.thesis.apeditor.editor
+ []
+
+[26 <./figures/05_package_apeditor.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+[]\T1/lmr/bx/n/10.95 IATCommandHandler.java \T1/lmr/m/n/10.95 Ini-ci-a-li-zál-j
+a a tá-ma-dá-si fá-kat az
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
+\T1/lmr/bx/n/10.95 hu.bme.mit.thesis.apeditor.codegen \T1/lmr/m/n/10.95 pro-jek
+t-ben de-fi-ni-ált funk-ci-o-na-li-tás
+ []
+
+<figures/05_metamodel.png, id=468, 5669.18pt x 3724.91624pt>
+File: figures/05_metamodel.png Graphic file (type png)
+<use figures/05_metamodel.png>
+Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
+(pdftex.def)             Requested size: 369.88582pt x 242.98062pt.
+) [27 <./figures/05_metamodel.png>] [28]
 \openout2 = `content/06_case-study.aux'.
 
  (content/06_case-study.tex
 6. fejezet.
-) [25
+) [29
 
 
 
@@ -920,7 +963,7 @@ Package pdftex.def Info: figures/05_overview.png  used on input line 9.
 
  (content/07_summary.tex
 7. fejezet.
-) [26
+) [30
 
 
 
@@ -929,7 +972,7 @@ Package pdftex.def Info: figures/05_overview.png  used on input line 9.
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
- [27
+ [31
 
 
 
@@ -943,10 +986,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 3DC70AE43DE2C3BD1131D221F719D9FA;9650.
  ) 
 Here is how much of TeX's memory you used:
- 16827 strings out of 478582
- 281804 string characters out of 2843400
- 586310 words of memory out of 3000000
- 34595 multiletter control sequences out of 15000+600000
+ 16863 strings out of 478582
+ 282834 string characters out of 2843400
+ 586604 words of memory out of 3000000
+ 34623 multiletter control sequences out of 15000+600000
  523126 words of font info for 61 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,8n,66p,1158b,508s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -959,9 +1002,9 @@ fb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
 10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb>
-Output written on thesis.pdf (33 pages, 1156615 bytes).
+Output written on thesis.pdf (37 pages, 1841657 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 469 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 489 words of extra memory for PDF output out of 10000 (max. 10000000)
 

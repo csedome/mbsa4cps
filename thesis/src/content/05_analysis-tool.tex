@@ -1,5 +1,9 @@
 \chapter{A kiberbiztonsági analízis megvalósítása}
 % Technikai leírása a modellező eszköz architektúrájának
+A következő fejezetnek a célja, hogy bemutassa az előző fejezetek által körülírt metodológia végrehajtását segítő fenyegetésmodellező eszközt, valamint a rendszermodellek származtatására készített szkriptet.
+
+Az első alfejezetben látható egy áttekintés majd két fő részre osztva láthatóak a további alfejezetek. A két fő rész egyike a rendszerből kiberbiztonsági modell transzformálást mutatja be és az ezt segítő eszközöket. A másik pedig az EMF alapon implementált modellező eszközt amely a kiberbiztonsági modell alapján képes a manuális analízist támogatni dokumentumok generálásával valamint a támadási fák szerkesztésével.
+
 \section{Áttekintés}
 
 Egy áttekintése az elemző eszköz részeinek megtekinthető a \ref{fig:04_OVERVIEW} ábrán.
@@ -11,15 +15,90 @@ Egy áttekintése az elemző eszköz részeinek megtekinthető a \ref{fig:04_OVE
 	\label{fig:05_OVERVIEW}
 \end{figure}
 
+Itt először kiemelném a fenyegetésmodell és a rendszermodell közös halmazában lévő tartalmakat. Ez a rendszermodell egy Papyrus projekt formájában készült el. Tartalmazza a \textit{Kihasználási eset diagramot} és a \textit{Termékleírást}. Ezek tartalmazzák az értékeket, funkcionalitást és a lehetséges károkozásokat, amelyekből két dokumentum állítható majd elő, amelyek három ISO 21434 workproduct-ot fednek. 
+
+A következő elem a Threat Model Generator ami egy Acceleo script a Papyrus modellező eszközhöz integrálva és a cybersecurity profil alapján állít elő egy kezdeti modell fájlt amelyet a fenyegetésmodellező eszközzel fogunk tudni megnyitni.
+
+A fenyegetésmodellező eszköz az APEditor (Attack Path Editor) amelyben lehetőségünk van a termékleírás és kihasználási diagram tartalmai közti dependenciák meghatározására, valamint támadási fák és fenyegetések automatikus származtatására.
+
+A támadási fák elkészítése után fogjuk tudni a modellből származtatni a támadás megvalósíthatóság értékelés dokumentumot ami további három ISO 21434 workproduct-ot fed le.
+
 \section{Kiberbiztonsági modell származtatása}
+
+A kiberbiztonsági modell származtatása egy fontos lépése a kockázatelemzési folyamatnak. Előkészíti a fenyegetésmodellünket illetve teremt egyfajta nyomon követhetőséget a rendszermodell és a kiberbiztonsági modell között.
 
 \subsection{Kiberbiztonsági profil}
 
+A profilban négy sztereotípia került meghatározásra. Egyrészről a UseCase UML metaosztályát bővíti a damage\_scenario sztereotípia amellyel a károkozásokat tudjuk jelölni. A károkozásokhoz fel lett véve attribútumként, hogy azt mely kiberbiztonsági tulajdonság sérülése okozta.
+
+A Component UML metaosztályt bőviti a functionality, component illetve az information sztereotípia. Itt a functionality jelenti a rendszerszintű funkcionalitást, ennek nincsenek az UML profilban attribútumai mivel azokat majd a kapcsolódó károkozások alapján fogjuk tudni meghatározni az elemzés későbbi fázisában. A component jelzi a HW komponenseket (pl. csatlakozó, modulok, áramkörök), az information pedig a SW szintű információkat (pl. szoftver, kriptográfiai adatok, üzenetek). Az utóbbi kettő az Asset (\textit{érték}) absztrakt osztályból van származtatva, ebből öröklik a kiberbiztonsági tulajdonságaikat.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_Profile_Diagram.PNG}
+	\caption{Kiberbiztonsági profil (UML)}
+	\label{fig:05_UML_PROFILE}
+\end{figure}
+
 \subsection{Fenyegetésmodell generátor}
+
+A fenyegetésmodell generátor egy Acceleo nyelven írt szkript, amelynek a feladata a Papyrus-ban szerkesztett .uml fájloknak a beolvasása és a tartalmuk alapján egy .apeditor fájlnak a generálása, amelyet a fenyegetésmodellező eszközben lehet tovább szerkeszteni.
+
+A projekt felépítése és a dependenciák a \ref{fig:05_tmgen_arch} ábrán láthatóak.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_package_tmgen.png}
+	\caption{Threat Model Generator dependenciái}
+	\label{fig:05_tmgen_arch}
+\end{figure}
+
+A \textbf{hu.bme.mit.thesis.example} projekt tartalmazza a kihasználási eset diagramot és a termékleírást, valamint applikálja a \textbf{hu.bme.mit.thesis.cybersecurity} projektben definiált kiberbiztonsági profil sztereotípiáit.
+
+A \textbf{hu.bme.mit.thesis.tmgen} tartalmazza a \textbf{generate.mtl} fájlt ami egy Acceleo nyelven írt Model-To-Text generátor. Ez fogja előállítani a projekt \textit{generated} mappájába az \textbf{example.apeditor} fájlt, amelyet át lehet majd másolni a fenyegetésmodellező eszköz \textit{runtime} környezetében létrehozott projektekbe.
 
 \section{Fenyegetésmodellező eszköz}
 
+A fenyegetésmodellező eszköz teszi lehetővé a károkozások, funkcionalitások és értékek közti dependencia beállítását, a támadási fák szerkesztését, illetve a szabványos dokumentumok generálását.
+
+Ennek a projektnek az áttekintése a \ref{fig:05_apeditor_arch} ábrán látható.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_package_apeditor.png}
+	\caption{APEditor projekt felépítése és dependenciái}
+	\label{fig:05_apeditor_arch}
+\end{figure}
+
+A \textbf{hu.bme.mit.thesis.apeditor} projektben található az \textit{apeditor.ecore} fájl ami a metamodellt tartalmazza, illetve az Eclipse Modelling Framework által generált fájlokat.
+
+A \textbf{hu.bme.mit.thesis.apeditor.edit} illetve a \textbf{hu.bme.mit.thesis.apeditor.editor} projektek szintén az EMF által lettek generálva, ezek adják meg a modell szerkesztő felületének az alapjait.
+
+A \textbf{hu.bme.mit.thesis.apeditor.design} tartalmaz egy Sirius keretrendszert használó \textit{apeditor.odesign} fájlt amely a támadási fáknak a grafikus megjelenítését és szerkesztő felületét írja le.
+
+A \textbf{hu.bme.mit.thesis.apeditor.genbutton} tartalmazza a plugin.xml-t amelyben az APEditor felhasználói felületén megjelenítendő gombok vannak leírva, valamint a gombok megnyomásával futtatott .java fájl is itt kerül összelinkelésre. A négy .java fájl a különböző funkcionalitását definiálják.
+
+\begin{itemize}
+	\item \textbf{GADCommandHandler.java} Asset Definition workproduct generálását viszi véghez a \textbf{hu.bme.mit.thesis.apeditor.codegen} projektben definiált funkcionalitás aktiválásával
+	\item \textbf{GIRCommandHandler.java} Impact Rating workproduct generálását viszi véghez a \textbf{hu.bme.mit.thesis.apeditor.codegen} projektben definiált funkcionalitás aktiválásával
+	\item \textbf{GARCommandHandler.java} Attack Feasibility Rating workproduct generálását viszi véghez a \textbf{hu.bme.mit.thesis.apeditor.codegen} projektben definiált funkcionalitás aktiválásával
+	\item \textbf{IATCommandHandler.java} Inicializálja a támadási fákat az \textbf{hu.bme.mit.thesis.apeditor.codegen} projektben definiált funkcionalitás aktiválásával
+\end{itemize} 
+
+Végül az \textbf{hu.bme.mit.thesis.apeditor.codegen} tartalmazza a kódgeneráláshoz szükséges osztályokat és függvényeket. Itt egyrészről a \textit{DocumentGenerator.xtend} fájl tartalmazza azokat az Xtend-ben megírt függvényeket, amelyek a szabványos workproduct-ok előállításához szükségesek, másrészről az Attack Feasibility Rating generálásakor, használja az \textit{AttackPathGenerator.java} függvényeit amelyek a támadási fákat fejti ki támadási útvonalakká amelyek támadási lépésekből állnak.
+
+Az \textit{ThreatModelGenerator.xtend} a modellből generálja le a támadási fák kezdeti állapotát és aztán azokat írja bele a modellfájlba. Ezzel bővítve a szerkesztett modellt.
+
+Mindkét Xtend fájl a \textit{CodeGeneratorHelper.java} fájlt használja még a fájlba író és fájlt olvasó műveletek elvégzésére.
+
 \subsection{Metamodel}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_metamodel.png}
+	\caption{apeditor.ecore fájlban definiált metamodell}
+	\label{fig:05_metamodel}
+\end{figure}
 
 \subsection{Fenyegetésmodell szerkesztő felület}
 

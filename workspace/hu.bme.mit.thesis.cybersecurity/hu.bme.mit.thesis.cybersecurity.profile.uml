@@ -8,6 +8,60 @@
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6q0eVPdcEe6_stnQ67IcSQ" key="Date" value=""/>
       <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_6q0eVfdcEe6_stnQ67IcSQ" key="Author" value="&lt;undefined>"/>
     </eAnnotations>
+    <contents xmi:type="ecore:EPackage" xmi:id="_uyyiABHXEe-UNuulsdJU4g" name="hu" nsURI="http:///schemas/hu/_uyws0BHXEe-UNuulsdJU4g/27" nsPrefix="hu">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uy0XMxHXEe-UNuulsdJU4g" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uy0XNBHXEe-UNuulsdJU4g" key="Version" value="0.0.28"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uy0XNRHXEe-UNuulsdJU4g" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uy0XNhHXEe-UNuulsdJU4g" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uy0XNxHXEe-UNuulsdJU4g" key="Date" value="2024-05-14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uy0XOBHXEe-UNuulsdJU4g" key="Author" value=""/>
+      </eAnnotations>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uyyiARHXEe-UNuulsdJU4g" name="damage_scenario">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uyyiAhHXEe-UNuulsdJU4g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_DO2xYPdcEe6_stnQ67IcSQ"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uyyiAxHXEe-UNuulsdJU4g" name="base_UseCase" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//UseCase"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyyiBRHXEe-UNuulsdJU4g" name="lossOfConfidentiality" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyyiBxHXEe-UNuulsdJU4g" name="lossOfIntegrity" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyyiCRHXEe-UNuulsdJU4g" name="lossOfAvailability" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uyyiCxHXEe-UNuulsdJU4g" name="functionality">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uyyiDBHXEe-UNuulsdJU4g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_h9mXkPqGEe6laZ0xGLbPGw"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uyyiDRHXEe-UNuulsdJU4g" name="base_Component" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uyyiDxHXEe-UNuulsdJU4g" name="component" eSuperTypes="_uyyiFBHXEe-UNuulsdJU4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uyyiEBHXEe-UNuulsdJU4g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_n2LqsAhfEe-Xebjf9hmNgg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uyyiERHXEe-UNuulsdJU4g" name="base_Component" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uyyiFBHXEe-UNuulsdJU4g" name="Asset" abstract="true">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uyyiFRHXEe-UNuulsdJU4g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_HW-0oAr1Ee-FqPpmzDGbRQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyyiFhHXEe-UNuulsdJU4g" name="confidentiality" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyyiGBHXEe-UNuulsdJU4g" name="integrity" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_uyzJERHXEe-UNuulsdJU4g" name="availability" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_uyzJExHXEe-UNuulsdJU4g" name="information" eSuperTypes="_uyyiFBHXEe-UNuulsdJU4g">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uyzJFBHXEe-UNuulsdJU4g" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_pCS4gAhfEe-Xebjf9hmNgg"/>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_uyzJFRHXEe-UNuulsdJU4g" name="base_Component" ordered="false">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Component"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
     <contents xmi:type="ecore:EPackage" xmi:id="_xNci8Qr6Ee-FqPpmzDGbRQ" name="hu" nsURI="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26" nsPrefix="hu">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xNcjFgr6Ee-FqPpmzDGbRQ" source="PapyrusVersion">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xNcjFwr6Ee-FqPpmzDGbRQ" key="Version" value="0.0.27"/>
