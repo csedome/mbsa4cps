@@ -1,14 +1,14 @@
 \chapter{Háttérismeretek}
 
-A célja ennek a fejezetnek, hogy átadjam a témám értelmezéséhez szükséges alapismereteket, fogalmakat és bemutassam a használt technikai eszközöket. Ebben a fejezetben leírtak lesznek szükségesek ahhoz, hogy a későbbi fejezeteket teljességükben lehessen értelmezni.
+A célja ennek a fejezetnek, hogy összefoglaljam a témám értelmezéséhez szükséges alapismereteket, fogalmakat és bemutassam a használt technikai eszközöket. Ebben a fejezetben leírtak lesznek szükségesek ahhoz, hogy a későbbi fejezeteket teljességükben lehessen értelmezni.
 
-Először szeretném a későbbiekben használt szakszavakat definiálni, az elterjedt szakirodalmakban található leírások alapján. 
+Az első fejezet tartalmazza a későbbiekben használt szakszavakat az elterjedt szakirodalmakban található leírások alapján. 
 
-Majd ezután írok az autóipari kiberbiztonság szabályozási környezetéről, azon belül is elsősorban az ISO/SAE 21434 szabványról fogok írni, ami lefedi alapvető irányelveket ehhez a területhez, valamint ad egy kezdetleges metodológiát a kiberbiztonsági kockázatelemzésre.
+Ezután következik az autóipari kiberbiztonság szabályozási környezete, azon belül is elsősorban az ISO/SAE 21434 szabvány, ami lefedi a terület alapvető irányelveit, valamint ad egy kezdetleges metodológiát a kiberbiztonsági kockázatelemzésre.
 
-Később adok egy leírást az IT biztonság területén már ismert fenyegetésmodellezés technikákról és keretrendszerekről.
+Ezt követi egy leírás az IT biztonság területén már ismert fenyegetésmodellezés technikákról és keretrendszerekről.
 
-Végül pedig adok egy rövid leírást a munkám során alkalmazott eszközökről és technológiákról.
+Végül pedig a munkám során alkalmazott eszközök és technológiák rövid ismertetése olvasható.
 
 \section{Kiberbiztonsághoz kapcsolódó alapfogalmak}
 
@@ -27,20 +27,20 @@ Ebben a fejezetben található minden továbbiakban nem általánosnak vehető, 
     \item \textbf{Kiberbiztonsági tulajdonság (cybersecurity property):} Egy attribútum amelyet meg kell védeni, pl. sértetlenség, bizalmasság, elérhetőség
     \item \textbf{Károkozás (damage scenario):} Egy kedvezőtlen következmény amely hatással van az úthasználóra
     \item \textbf{Fenyegetés (threat scenario):} Egy lehetséges kompromittálása valamilyen érték kiberbiztonsági tulajdonságának, amely egy károkozáshoz vezethet (pl: egy szoftveres sérülékenység kihasználása)
-    \item \textbf{Támadási útvonal (attack path):} Események (pl: egy fenyegetés megvalósulása) egymás utáni bekövetkezése, amelyek egy fenyegetést realizál
+    \item \textbf{Támadási útvonal (attack path):} Események (pl: egy fenyegetés megvalósulása) egymás utáni bekövetkezése, amely egy károkozást realizálnak
     \item \textbf{Támadási lépés (attack step):} Az egyes események amelyeknek az egymás utáni sorozata egy támadási útvonalat realizál
 \end{itemize}
 
 \section{Autóipari kiberbiztonsági szabályozások és szabványok}
 
-Az autóipari kiberbiztonság területe ellentétben az üzembiztonsággal vagy a bővebb IT biztonsággal még csak pár éves múltra tekint vissza, emiatt az itt alkalmazandó szabályozások és szabványok még csak az első alkalommal kerültek kiadásra. 
+Az autóipari kiberbiztonság területe ellentétben az üzembiztonsággal vagy a bővebb IT biztonsággal még csak pár éves múltra tekint vissza, emiatt az itt alkalmazandó szabályozások és szabványok még csak az első változatukban kerültek kiadásra. 
 
 \subsection{UN ECE R155}
 Az első specifikusan autóipari szabályozás az Egyesült Nemzetek által kiadott 155-ös számú szabályozás a kiberbiztonságról és a kiberbiztonság kezelő rendszerekről és járművek engedélyeztetésének kapcsolatáról (UN ECE R155\cite{R155}). Ennek a szabályozásnak kell megfelelnie a járműgyártóknak és beszállítóiknak az összes 2024 után megjelenő járműmodell engedélyeztetéséhez.
 
 Ez a szabályozás már tartalmazza az igényt a kockázat-alapú kiberbiztonsági kezelés szükségességére. Ami annyit tesz, hogy a biztonsági szolgáltatásokat az alapján kell meghatározni, hogy egy kiberbiztonsági fenyegetés esetleges bekövetkezése mekkora hatással lenne a védendő autóipari termékre.
 
-Szintén már megtalálhatjuk az autóipari termékek életciklusának különválasztását fejlesztési, gyártási és gyártás utáni fázisokra, ami mutatja azt, hogy a kiberbiztonsági szempontból fontos figyelembe, venni, hogy az életciklus különböző szakaszain más-más fenyegetésekre lehet számítani, valamint ez alapján más követelmények is lesznek érvényesek a termékre.
+Szintén már megtalálhatjuk az autóipari termékek életciklusának különválasztását fejlesztési, gyártási és gyártás utáni fázisokra, ami mutatja azt, hogy a kiberbiztonsági szempontból fontos figyelembe, venni, hogy az életciklus különböző szakaszain más-más fenyegetésekre lehet számítani, és ennek megfelelően más követelmények is lesznek érvényesek a termékre.
 
 A dokumentum a továbbiakban követelményeket határoz meg, hogy milyen folyamatokon kell keresztülmennie egy autóipari terméknek, ahhoz, hogy az a közúti használatra engedélyt kapjon. 
 
@@ -48,43 +48,43 @@ A dokumentum a továbbiakban követelményeket határoz meg, hogy milyen folyama
 
 A másik, már technikaibb szintű, szintén 2021-es megjelenésű, irányadó szabvány az autóipari kiberbiztonsági mérnökségről szóló ISO/SAE 21434 "Road vehicles - Cybersecurity engineering". Ezt a szabványt közösen fejlesztette és adta ki 2021 augusztusában az International Standards Organization (ISO) és a Society of Automotive Engineers (SAE).
 
-Ez a szabvány kezdett el követelményeket megfogalmazni az autóipari rendszerek (E/E) kiberbiztonsági kockázatkezelésének menetére, valamint a biztonság fejlesztésére és kezelésére. A felépítése emlékezetheti az olvasóját a már jóval ismertebb ISO 26262 "Road vehicles - Functional safety" szabványra, amely ugyanazon termékeknek az üzembiztonság kezelésére és elemzésére fókuszál.
+Ez a szabvány kezdett el követelményeket megfogalmazni az autóipari rendszerek (E/E) kiberbiztonsági kockázatkezelésének menetére, valamint a biztonság fejlesztésére és kezelésére. A felépítése emlékezetheti az olvasóját a már jóval ismertebb ISO 26262 "Road vehicles - Functional safety" szabványra, amely ugyanazon termékek üzembiztonságának a kezelésére és elemzésére fókuszál.
 
-Kezdésképpen a szabvány tervezési, fejlesztési, gyártási, üzemeltetési, karbantartási és kivezetési fázisaira fogalmaz meg követelményeket, valamint tartalmaz egy fenyegetés elemző és kockázat értékelő eljárást amelynek a Threat Analysis and Risk Assessment (TARA) nevet adták.
+A szabvány először a tervezési, fejlesztési, gyártási, üzemeltetési, karbantartási és kivezetési fázisokra fogalmaz meg követelményeket, valamint tartalmaz egy fenyegetés elemző és kockázat értékelő eljárást amelynek a Threat Analysis and Risk Assessment (TARA) nevet adták.
 
-Továbbá tartalmaz más követelményeket a kiberbiztonsági elvárások kezelésére menedzsment és organizációs szintekre, azonban ezek ismerete nem tartozik a témám látókörébe.
+Továbbá tartalmaz más követelményeket a kiberbiztonsági elvárások kezelésére különböző menedzsment és organizációs szintekre, azonban ezek ismerete nem tartozik a témám látókörébe.
 
-Maga a téma kifejezetten a tervezési fázishoz tartozó kockázatelemzésnek a végrehajtására vonatkozó követelményeit veszi alapul. A később bemutatásuk során felfedezhető lesz, hogy nem elhanyagolható szüksége van a kockázatelemzés iteratív használatának eltérően az életciklus fázisaira, azonban a termék üzemeltetési környezetére vonatkozó védelmet ebben a fázisban határozzuk meg.
+Dolgozatom kifejezetten a tervezési fázishoz tartozó kockázatelemzés végrehajtására vonatkozó követelményeket veszi alapul. A későbbi bemutatásuk során felfedezhető lesz, hogy a kockázatelemzés iteratív használatának szükségessége az életciklus különböző fázisaiban, azonban a termék üzemeltetési környezetére vonatkozó védelmet ebben a tervezési fázisban határozzuk meg. Ezzel elkerülve a magasabb költségű utólagos fejlesztéseket.
 
 \subsubsection{Követelmények a tervezési fázisra}
 A tervezési fázis egy autóipari termék életciklusában a kiindulópont. Az ebben a fázisban végzett kiberbiztonsági tevékenységek célja, hogy (i) definiálásra kerüljön az elemzendő termék, a környezete és interakciói, (ii) meghatározzák a kiberbiztonsági célokat és állításokat valamint, hogy (iii) elkészüljön a kiberbiztonsági terv.
 
 A \textbf{termék definíciója} tartalmazza a termék határait, feladatait, valamint az előzetes architektúrát. Célunk itt az, hogy összegyűjtsük az elemzéshez szükséges információkat.
 
-A \textbf{kiberbiztonsági célok és állítások} meghatározásához szükséges a TARA elvégzése, amelynek a kimenete, az egyes kockázatok kezelésére vonatkozó döntések lesznek, amelyek alapján eldönthetjük, hogy a kockázathoz egy célt vagy állítást kell megfogalmaznunk. A cél fogja meghatározni a magas-szintű követelményt amit a termék fejlesztése során figyelembe kell venni, míg az állítás azt határozza meg, hogy az adott kockázat mitigálása valamilyen okból már teljesül vagy a teljesülése szükségtelen.
+A \textbf{kiberbiztonsági célok és állítások} meghatározásához szükséges a TARA elvégzése, aminek az eredményeképp születnek meg, az egyes kockázatok kezelésére vonatkozó döntések, amelyek alapján eldönthetjük, hogy a kockázathoz egy célt vagy állítást kell megfogalmaznunk. A cél fogja meghatározni a magas-szintű követelményt amit a termék fejlesztése során figyelembe kell venni, míg az állítás azt határozza meg, hogy az adott kockázat mitigálása valamilyen okból már teljesült vagy a teljesülése szükségtelen.
 
 Ezután készülhet el a \textbf{kiberbiztonsági terv}, amelyben az egyes mitigációkat határozzuk meg a célok elérésére, a célokat tovább finomítjuk követelményekké, majd azokat allokálhatjuk a termékre vagy egyes komponensekre.
 
-\subsubsection{Követelmények a fenyegetéselemzésre és kockátértékelésre}
-A TARA bemenete a termék definíció, és ez alapján lehet elvégezni a hét lépésből álló kockázatelemzési eljárást aminek a kimenete az egyes fenyegetések kockázati értékkel, valamint azok kezeléséről szóló döntés.
+\subsubsection{Követelmények a fenyegetéselemzésre és kockázatértékelésre}
+A TARA bemenete a termék definíció, és ez alapján lehet elvégezni a hét lépésből álló kockázatelemzési eljárást aminek a kimenete az egyes fenyegetések kockázati értékkel, valamint az azok kezeléséről szóló döntés.
 
-Az első lépése a kockázatelemzésnek az \textbf{érték azonosítás}. Ennek a lépésnek két célja van, az egyik, hogy a lehetséges \textit{károkozásokat} azonosítja és annak segítségével az egyes \textit{értékeket}, a másik pedig, hogy az értékekhez \textit{kiberbiztonsági tulajdonságokat} rendelünk. 
-A károkozások tartalmazhatják a kár körülírását, a releváns értékeket és a kapcsolatot a járműfunkcionalitás és a kedvezőtlen következményt.
-Az értékek azonosítására pedig használhatjuk továbbá a termékleírást, \textit{fenyegetések} definiálását vagy már létező katalógusokat.
+Az első lépése a kockázatelemzésnek az \textbf{érték azonosítás}. Ennek a lépésnek két célja van. Az egyik, hogy a lehetséges \textit{károkozásokat} azonosítsuk és azok segítségével az egyes \textit{értékeket} is meghatározzuk, a másik pedig, hogy az értékekhez \textit{kiberbiztonsági tulajdonságokat} rendeljünk. 
+A károkozások tartalmazhatják a kár körülírását, a releváns értékeket és a kapcsolatot a járműfunkcionalitás és a kedvezőtlen következmény között.
+Az értékek azonosítására használhatjuk továbbá a termékleírást, a \textit{fenyegetések} definiálását vagy már létező katalógusokat.
 
-A második lépés a \textbf{hatásértékelés}. Itt a célunk az egyes lehetséges károkozásokat, valamilyen keretrendszer mentén értékelni azok következményeit. Egy lehetőség, amit több szabvány is említ az a SFOP alapú értékelés, ami négy dimenziót határoz meg amiben el kell végezni az értékelést. Ezek pedig az üzembiztonsági hatás (safety), gazdasági hatás (financial), üzemeltetési hazás (operational), valamint az adatvédelmi hatás (privacy).
+A kockázatelemzés második lépése a \textbf{hatásértékelés}. Itt a célunk az egyes lehetséges károkozásokat és azok következményeit valamilyen keretrendszer mentén értékelni. Egy lehetőség, amit több szabvány is említ, az az SFOP alapú értékelés. Az SFOP négy dimenziót határoz meg amiben el kell végezni az értékelést. Ezek az üzembiztonsági hatás (safety), gazdasági hatás (financial), üzemeltetési hatás (operational), valamint az adatvédelmi hatás (privacy).
 
-A harmadik lépés a \textbf{fenyegetések azonosítása}, amelyekhez hozzá kell rendelni a támadott \textit{értéket}, annak a kompromittált \textit{kiberbiztonsági tulajdonságát}, valamint a kompromitálás okát. A szabvány szerint ezek azonosítására lehet egyrészről csoportos, brainstorming alapú vagy szisztematikus, keretrendszerek által meghatározott módszereket is alkalmazni, utóbbi esetben javasolja valamilyen ismert fenyegetésmodellezési megközelítést használni. Néhány felsorolt példa ezekre az EVITA, TVRA, PASTA és a STRIDE.
+A kockázatelemzés harmadik lépése a \textbf{fenyegetések azonosítása}, amelyekhez hozzá kell rendelni a támadott \textit{értéket}, annak a kompromittált \textit{kiberbiztonsági tulajdonságát}, valamint a kompromittálás okát. A szabvány szerint ezek azonosítására lehet egyrészről csoportos, brainstorming alapú vagy szisztematikus, keretrendszerek által meghatározott módszereket is alkalmazni. Az utóbbi esetben javasolt valamilyen ismert fenyegetésmodellezési megközelítést használata. Néhány felsorolt példa ezekre az EVITA, TVRA, PASTA és a STRIDE.
 
-A negyedik lépés a \textbf{támadási útvonal elemzés}, erre a szabvány szerint top-down vagy bottom-up megközelítést is használhatunk. Előbbi esetben támadási fákat, támadási gráfokat, utóbbi esetben már ismert sérülékenységekre alapulót.
+A negyedik lépés a \textbf{támadási útvonal elemzés}. Az elemzés során a szabvány szerint top-down vagy bottom-up megközelítést is használhatunk. Előbbi esetben támadási fákat, támadási gráfokat, utóbbi esetben már ismert sérülékenységekre alapulót.
 
 Az ötödik lépés a \textbf{támadás megvalósíthatóságának vizsgálata}, ahol több már létező keretrendszert alkalmazhatunk az egyes támadási útvonalak kiértékelésére. 
 
 A hatodik lépés a \textbf{kockázatiérték meghatározás}. Itt egy egytől ötig terjedő skálán értékeljük a fenyegetési szcenáriókat a hatásértékek és a megvalósíthatósági értékek alapján.
 
-A hetedik és egyben utolsó lépés pedig a \textbf{kockázatkezelési döntés}, amikor az egyes kockázatok kezeléséről hozhatunk döntést. A kockázatokat elkerülhetjük, csökkenthetjük, megoszthatjuk valamint megőrizhetjük.
+A hetedik és egyben utolsó lépés pedig a \textbf{kockázatkezelési döntés}, amikor az egyes kockázatok kezeléséről hozhatunk döntést. A kockázatokat elkerülhetjük, csökkenthetjük, megoszthatjuk, valamint megőrizhetjük.
 
-Jól látható, hogy ezek a követelmények elég általánosak, sokat döntési jogosultságot helyez a folyamatot bevezető személyekre, emellett viszont magasszinten jól körülírt követhető lépéseket határoz meg amelyek megfelelnek más szabályozások feltételeinek és képes eljuttatni a mérnököt a konkrét megvalósítandó intézkedések meghatározásához. 
+Jól látható, hogy ezek a követelmények elég általánosak, sok döntési jogosultságot helyez a folyamatot bevezető személyekre, emellett viszont magas szinten jól körülírt követhető lépéseket határoz meg amelyek megfelelnek más szabályozások feltételeinek és képes eljuttatni a mérnököt a konkrét megvalósítandó intézkedések meghatározásához. 
 
 \section{Fenyegetésmodellezési keretrendszerek és módszerek}
 
@@ -92,17 +92,17 @@ A fenyegetésmodellezés egy olyan folyamat, aminek segítségével azonosítani
 
 Ez a folyamat már viszonylag régóta elterjedt a kiberbiztonsági szakmában és támogató jellegű kapcsolatban áll a kockázatelemzésekkel. Amíg a fenyegetésmodellezés célja a fenyegetések meghatározása, a kockázatelemzés az ami segít nekünk a feltárt fenyegetések kezelésének priorizálásában vagy esetenként az egyes fenyegetések elhagyásában.
 
-Tágabb értelemben akár a kockázatelemzést is vehetjük a fenyegetésmodellezés részének, azonban az ISO/SAE 21434 szabványban leírt folyamat is különválasztja azokat és a fenyegetésmodellezést kifejezetten a fenyegetések meghatározására hasznosítaná.
+Tágabb értelemben akár a kockázatelemzést is vehetjük a fenyegetésmodellezés részének, azonban az ISO/SAE 21434 szabványban leírt folyamat is különválasztja azokat és a fenyegetésmodellezést kifejezetten a fenyegetések meghatározására javasolja.
 
 \subsection{CIA és AAA}
 
-Habár talán még nem is egy teljes fenyegetésmodellezési keretrendszer a CIA háromszög vagy CIA triád, mégis a legtöbb kiberbiztonsági elemzés ezen betűszó által kifejezett modellt alkalmazza.
+Bár még nem is egy teljes fenyegetésmodellezési keretrendszer a CIA háromszög vagy CIA triád, mégis a legtöbb kiberbiztonsági elemzés az ezen betűszó által kifejezett modellt alkalmazza.
 
 Már korábban beszéltünk kiberbiztonsági tulajdonságokról, itt a CIA által definiáltak használjuk, ezek a bizalmasság (confidentiality), sértetlenség (integrity) és elérhetőség (availability). 
 
-Szintén szokás még kibővíteni ezt a modellt egyéb tulajdonságokkal, ilyenek lehetnek a AAA modell elemei amelyek az egyediség (authenticity), engedélyezhetőség (authorizability), valamint az elszámoltathatóság (accountability).
+Szintén előfordul ennek a modellnek a bővítése egyéb tulajdonságokkal, ilyenek a szoftverbiztonság esetén használt AAA modell elemei amelyek az egyediség (authenticity), engedélyezhetőség (authorizability), valamint az elszámoltathatóság (accountability).
 
-Adott értéknek a tulajdonságait meghatározhatjuk az alábbi kérdések feltevésével:
+Adott értéknek a tulajdonságait meghatározhatjuk az alábbi kérdések megválaszolásával:
 \begin{itemize}
     \item \textbf{Bizalmasság}: Harmadik fél szerezhet-e tudomást az értékről, annak tartalmáról?
     \item \textbf{Sértetlenség}: Az érték módosulása vezethet-e nem várt következményekhez?
@@ -118,12 +118,12 @@ A továbbiakban ezeket a modelleket fogom alkalmazni a kiberbiztonsági tulajdon
 A STRIDE egy modell, amely számítógépes kiberbiztonsági fenyegetések azonosítására lett kifejlesztve a Microsoft által 1999-ben. A nevét a hat fenyegetéstípusról kapta, ezek és a jelentésük:
 
 \begin{itemize}
-    \item \textbf{Spoofing:} Megszemélyesítés, amikor a rendszer egy hamisan érzékeli a te kilétedet 
+    \item \textbf{Spoofing:} Megszemélyesítés, amikor a rendszer hamisan érzékeli az információ küldőjének a kilétét
     \item \textbf{Tampering:} Valamilyen információ megváltoztatása
     \item \textbf{Repudiation:} Annak az állítása, hogy valamit nem te csináltál vagy nem is történt meg
-    \item \textbf{Information disclosure:} Egy támadó képes olyan információhoz való hozzáférésre amihez nincs felhatalmazva
+    \item \textbf{Information disclosure:} Egy támadó képes hozzáférni olyan információhoz amire nincs jogosultsága
     \item \textbf{Denial of Service:} Erőforrások túlterhelése miatt szolgáltatás elérhetetlenné tétele
-    \item \textbf{Elevation of privilige:} Egy támadó képes olyan művelet elvégzésére amire nincs felhatalmazva
+    \item \textbf{Elevation of privilige:} Egy támadó képes olyan művelet elvégzésére, amire nincs felhatalmazva
 \end{itemize}
 
 Ez első ránézésre egy jó lehetséges kategorizálást ad meg nekünk fenyegetésekhez, valamint kibővíthető ezek kapcsolata az azonosított értékekhez és kiberbiztonsági tulajdonságaikhoz. Tehát az egyes fenyegetés típusok egy bizonyos tulajdonság sérülését célozzák.
@@ -148,7 +148,7 @@ Ezekből én mivel csak a CIA tulajdonságait használom, az én esetemben a Tam
 
 \section{Autóipari rendszerek általános tervezése és modellezése}
 
-A diplomamunkám sajátossága abból adódik, hogy amíg az általános IT rendszerek architektúrális tervezésének jellemzően kisebb hagyománya van addig a kiber-fizikai rendszereknél, azon belül is a járműveknél, a rendszer komplexitása és üzembiztonság kritikussága miatt, mély hagyománya van ezeknek a rendszerekhez tartozó kezdeti tervdokumentumok készítésének.
+A diplomamunkám sajátossága abból adódik, hogy amíg az általános IT rendszereknek vagy azok egyes elemeinek az architektúrális tervezése kevésbé jellemző, addig a kiber-fizikai rendszereknél, azon belül is a járműveknél, a rendszer komplexitása és az üzembiztonság kritikussága miatt, nagy hagyománya van ezeknek az átfogó dokumentálására már a tervezés kezdeti szakaszában.
 
 \subsection{V-modell}
 
@@ -188,17 +188,15 @@ Az én megoldásom végül az alap UML-hez tartalmaz egy kiberbiztonsági profil
 
 \subsection{Papyrus}
 
-A Papyrus egy nyílt forráskódú UML 2 modellező eszköz. Ezt az eszközt fogom használni az értékek definiálására egy komponens diagramon valamint a károkozásokat egy használati eset diagramon.
+A Papyrus egy nyílt forráskódú UML 2 modellező eszköz. Ezt az eszközt fogom használni az értékek definiálására egy komponens diagramon valamint a károkozásokat egy használati eset diagramon keresztül.
 
-Ebben az eszközben továbbá definiálok egy kiberbiztonsági profilt ami bővítményeket tartalmaz komponensekhez és használati esetekhez.
+Ebben az eszközben definiálok továbbá egy kiberbiztonsági profilt, ami bővítményeket tartalmaz a komponensekhez és a használati esetekhez.
 
 \subsection{Acceleo}
 
 Az Acceleo egy nyílt forráskódú Model-2-Text (M2T) eszköz, amellyel a Papyrus-ban definiált modellekből fogom generálni a kiberbiztonsági elemző eszköz kiinduló modelljét. Más szóval ezzel az eszközzel származtatom a rendszermodellből a kiberbiztonsági modellt.
 
-Azért eset a választásom erre az alkalmazásra az Xtend helyett, mivel az integrációja a Papyrus eszközzel sokkal jobban működik, illetve minimális komplexitású kódgenerálást fogok csak ezzel végezni.
-
-
+Azért eset a választásom erre az alkalmazásra az Xtend helyett, mivel az integrációja a Papyrus eszközzel sokkal jobban támogatott, illetve mivel nincs szükség nagy komplexitású kódgenerálásra.
 
 \subsection{Eclipse Modelling Framework}
 
@@ -208,13 +206,13 @@ Az EMF támogatja modellek definiálását, majd azokból automatikusan Java kó
 
 Az EMF szintén ad egy automatikusan generált kezelőfelületet a definiált modell szerkesztésére, tartalommal feltöltésére.
 
-Ezt a keretrendszert használtam a kiberbiztonsági elemző eszköz metamodelljének definiálására, valamint az eszköz kezelő felülete is a generált szerkesztő felületre épül.
+Ezt a keretrendszert használtam a kiberbiztonsági elemző eszköz metamodelljének definiálására, továbbá az eszköz kezelő felülete is a generált szerkesztő felületre épül.
 
 \subsection{Xtend}
 
 Az Xtend egy Java alapú programozási nyelv amelyet elsősorban kódgenerálási célokra lehet használni.
 
-Ezt a nyelvet használtam arra, hogy elkészítsem először a modellből való generálását a szabványos dokumentumoknak, valamint a támadási fák inicializálását is ebben készítettem.
+Ezt a nyelvet használtam arra, hogy elkészítsem először a modellből való generálását a szabványos dokumentumoknak, majd a támadási fák inicializálását is.
 
 \subsection{Sirius}
 
