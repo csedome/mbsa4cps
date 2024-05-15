@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  14 MAY 2024 20:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  15 MAY 2024 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -777,8 +777,12 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 
-] [4] [5] [6] [7]
-<figures/02_ASPICE.png, id=315, 597.432pt x 301.125pt>
+] [4] [5] [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7]
+<figures/02_ASPICE.png, id=314, 597.432pt x 301.125pt>
 File: figures/02_ASPICE.png Graphic file (type png)
 <use figures/02_ASPICE.png>
 Package pdftex.def Info: figures/02_ASPICE.png  used on input line 161.
@@ -983,7 +987,7 @@ Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
 (content/05_analysis-tool.aux) (content/06_case-study.aux)
 (content/07_summary.aux))
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 3DC70AE43DE2C3BD1131D221F719D9FA;9650.
+(rerunfilecheck)             Checksum: 356FC0070A1AB2AB260B41F4BED1BCAE;9660.
  ) 
 Here is how much of TeX's memory you used:
  16863 strings out of 478582
@@ -1002,7 +1006,7 @@ fb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
 10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb>
-Output written on thesis.pdf (37 pages, 1841657 bytes).
+Output written on thesis.pdf (37 pages, 1842194 bytes).
 PDF statistics:
  540 PDF objects out of 1000 (max. 8388607)
  83 named destinations out of 1000 (max. 500000)

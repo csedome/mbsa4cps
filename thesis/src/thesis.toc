@@ -7,13 +7,13 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}UN ECE R155}{4}{subsection.2.2.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.2.2}ISO/SAE 21434}{4}{subsection.2.2.2}%
 \select@language {magyar} \contentsline {subsubsection}{\numberline {2.2.2.1}Követelmények a tervezési fázisra}{5}{subsubsection.2.2.2.1}%
-\select@language {magyar} \contentsline {subsubsection}{\numberline {2.2.2.2}Követelmények a fenyegetéselemzésre és kockátértékelésre}{5}{subsubsection.2.2.2.2}%
+\select@language {magyar} \contentsline {subsubsection}{\numberline {2.2.2.2}Követelmények a fenyegetéselemzésre és kockázatértékelésre}{5}{subsubsection.2.2.2.2}%
 \select@language {magyar} \contentsline {section}{\numberline {2.3}Fenyegetésmodellezési keretrendszerek és módszerek}{6}{section.2.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.3.1}CIA és AAA}{6}{subsection.2.3.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.3.2}STRIDE}{7}{subsection.2.3.2}%
 \select@language {magyar} \contentsline {section}{\numberline {2.4}Autóipari rendszerek általános tervezése és modellezése}{8}{section.2.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.4.1}V-modell}{8}{subsection.2.4.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.4.2}UML és SysML}{8}{subsection.2.4.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.4.2}UML és SysML}{9}{subsection.2.4.2}%
 \select@language {magyar} \contentsline {section}{\numberline {2.5}Felhasznált eszközök}{9}{section.2.5}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.5.1}Papyrus}{9}{subsection.2.5.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}Acceleo}{9}{subsection.2.5.2}%
