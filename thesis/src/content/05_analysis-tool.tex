@@ -100,10 +100,112 @@ Mindkét Xtend fájl a \textit{CodeGeneratorHelper.java} fájlt használja még 
 	\label{fig:05_metamodel}
 \end{figure}
 
+A metamodell az ISO 21434 szabványban definiált különböző elemeket és megnevezéseket használja. Az elemzésben felhasznált elemek között a szabvány alapján határoztam meg a kapcsolati függőségeket és ezeket tartalmazza a \textit{ThreatModel} objektum.
+
+Az előzetes fenyegetésmodell származtatása fogja előállítani a \textbf{DamageScenario} és \textbf{Asset} listákat amelyeket fel is vesz a modellből generált \textbf{ThreatModel} objektum alá.
+
+A generált modellben minden \textbf{DamageScenario} összerendelhető lesz egy \textbf{Functionality}-vel, ez a rendszerszintű \textbf{Asset}.
+
+A dependenciákat a szintén generált \textbf{Information} (SW-szintű érték) és \textbf{Component} (HW-szintű érték) objektumoknak a \textbf{Functionality}-hez való rendelésével tettem lehetővé.
+
+A támadási fáknak az inicializálása egy egy \textbf{AttackTree} létrehozásával történik az egyes \textbf{DamageScenario}-khoz. A \textbf{Threat}-ek az alapján vannak generálva, hogy a \textbf{DamageScenario}-hoz tartozó \textbf{Asset}-ek milyen kiberbiztonsági tulajdonságokkal rendelkeznek. A \textbf{Gate} objektumok pedig manuálisan kerülnek létrehozásra a támadási fa szerkesztő felületen.
+
+Továbbá a \textbf{GateType} enumeráció teszi lehetővé a kapuk, a \textbf{UniqueElement} pedig az összes egyedi elem megkülönböztetését.
+
+A \textbf{ThreatModel} rendelkezik egy projectPath és projectName property-vel, ezeket az értékeket a dokumentumok generálásához használjuk.
+
+
 \subsection{Fenyegetésmodell szerkesztő felület}
+
+A fenyegetésmodell szerkesztő felülete szolgál arra, hogy a dependenciákat meghatározza a SW- és HW-szintű értékek, valamint a funkcionalitás között, illetve, hogy allokáljuk a károkozásokhoz a funkcionalitást.
+
+Ez a felület az Ecore modellből Eclipse Modelling Framework segítségével kerül generálásra. Megtekinthető a \ref{fig:05_tmeditor}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_tmeditor_ds.png}
+	\caption{Fenyegetésmodell szerkesztő felület}
+	\label{fig:05_tmeditor}
+\end{figure}
+
+Az ábrán látható a Model Explorer-ben az éppen megnyitott projekt, valamint az abban lévő fenyegetésmodellek a .apeditor fájlkiterjesztésekkel, illetve a támadási fa diagramok lesznek láthatóak a .aird fájl megnyitásával.
+
+A jobb oldalon lehet böngészni és felvenni új elemeket a fenyegetésmodellbe, illetve itt kell kiválasztani a szerkesztendő elemet.
+
+Bal alul pedig a properties fülnél látjuk a metamodellben definiált attribútumokat és szerkeszthetjük a felvett értékeket (value).
 
 \subsection{Támadási fák inicializálása}
 
+A fenyegetésmodell kiválasztásával, a projekt útvonal és nevek beállítását követően el is végezhetjük a támadási fák inicializálását az \ref{fig:05_at_init} ábrán látható gomb megnyomásával.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_tmeditor.png}
+	\caption{Támadási fák inicializálását végző kiterjesztés}
+	\label{fig:05_at_init}
+\end{figure}
+
+Ez a kiterjesztés fogja használni a kódgenerátor plugin \textbf{ThreatModelGenerator.xtend} osztályában implementált funkcionalitást meghívni, amely a projekt útvonalon található fenyegetésmodell fájlt feltölti a tartalma alapján előálló támadási fákkal. Az inicializálás eredménye a \ref{fig:05_at_inited} ábrán látható.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_at_inited.png}
+	\caption{Támadási fák inicializálásának eredménye}
+	\label{fig:05_at_inited}
+\end{figure}
+
 \subsection{Támadási fa szerkesztő felület}
 
+A szerkesztő felületet az Eclipse Sirius keretrendszerére alapozva készítettem el. A projektben létrehozott .aird fájlra kattintva lehet a támadási fákhoz új reprezentációt létrehozni, ennek az eredménye a \ref{fig:05_at_editor_1} ábrán látható.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_ateditor_1.png}
+	\caption{Reprezentáció létrehozása}
+	\label{fig:05_at_editor_1}
+\end{figure}
+
+A létrehozás automatikusan meg is fogja nyitni a szerkesztőfelületet (\ref{fig:05_ateditor_2} ábra) amelyen megfigyelhető a gyökér elemhez automatikusan létrehozott első kapu, amelynek típusa a properties fülön állítható.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_ateditor_2.png}
+	\caption{Támadási fa szerkesztő felület (kezdeti)}
+	\label{fig:05_ateditor_2}
+\end{figure}
+
+A jobb oldalt a Tools menü alatt találhatóak az új modellelemek létrehozásához szükséges eszközök. Potenciálisan vagy új kapukat fogunk létrehozni vagy a kapuk bemenetére kötünk fenyegetéseket. Szintén itt van lehetőség törölni olyan fenyegetéseket amelyek nem relevánsak a támadási fához. Egy kész hibafa megtekinthető a \ref{fig:05_ateditor_3} ábrán.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_ateditor_3.png}
+	\caption{Támadási fa szerkesztő felület (befejezett)}
+	\label{fig:05_ateditor_3}
+\end{figure}
+
+A Sirius leírófájl benne a grafikusan megjelenítendő elemekkel pedig a \ref{fig:05_ateditor_4} ábrán látható.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_ateditor_4.png}
+	\caption{Támadási fa szerkesztő leírófájlja}
+	\label{fig:05_ateditor_4}
+\end{figure}
+
 \subsection{Dokumentum generátor}
+
+A dokumentumgenerálást szintén egy plugin-ként definiált gomb megnyomásával lehet elvégezni, miután a mérnök kiválaszotta a fenyegetésmodellt és beállította helyesen a projekt útvonalat és neveket.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_docgen_1.png}
+	\caption{Dokumentumok generálását végző kiterjesztés}
+\end{figure}
+
+A generálás elvégzése után a projekt alatt megjelennek a manuális analízis elvégzéséhez használható .csv fájlok.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=130mm, keepaspectratio]{figures/05_docgen_2.png}
+	\caption{Generált dokumentumok}
+\end{figure}

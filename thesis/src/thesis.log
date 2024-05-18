@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  17 MAY 2024 21:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  18 MAY 2024 14:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,12 +976,62 @@ File: figures/05_metamodel.png Graphic file (type png)
 <use figures/05_metamodel.png>
 Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
 (pdftex.def)             Requested size: 369.88582pt x 242.98062pt.
-) [28 <./figures/05_metamodel.png>] [29]
+[28 <./figures/05_metamodel.png>]
+<figures/05_tmeditor_ds.png, id=477, 749.80125pt x 514.17094pt>
+File: figures/05_tmeditor_ds.png Graphic file (type png)
+<use figures/05_tmeditor_ds.png>
+Package pdftex.def Info: figures/05_tmeditor_ds.png  used on input line 126.
+(pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
+<figures/05_tmeditor.png, id=479, 749.80125pt x 514.17094pt>
+File: figures/05_tmeditor.png Graphic file (type png)
+<use figures/05_tmeditor.png>
+Package pdftex.def Info: figures/05_tmeditor.png  used on input line 143.
+(pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
+ [29 <./figures/05_tmeditor_ds.png>]
+<figures/05_at_inited.png, id=486, 749.80125pt x 514.17094pt>
+File: figures/05_at_inited.png Graphic file (type png)
+<use figures/05_at_inited.png>
+Package pdftex.def Info: figures/05_at_inited.png  used on input line 152.
+(pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
+ [30 <./figures/05_tmeditor.png> <./figures/05_at_inited.png>]
+<figures/05_ateditor_1.png, id=495, 807.7678pt x 517.18219pt>
+File: figures/05_ateditor_1.png Graphic file (type png)
+<use figures/05_ateditor_1.png>
+Package pdftex.def Info: figures/05_ateditor_1.png  used on input line 163.
+(pdftex.def)             Requested size: 369.88582pt x 236.82555pt.
+<figures/05_ateditor_2.png, id=497, 918.43124pt x 569.87906pt>
+File: figures/05_ateditor_2.png Graphic file (type png)
+<use figures/05_ateditor_2.png>
+Package pdftex.def Info: figures/05_ateditor_2.png  used on input line 172.
+(pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
+<figures/05_ateditor_3.png, id=499, 918.43124pt x 569.87906pt>
+File: figures/05_ateditor_3.png Graphic file (type png)
+<use figures/05_ateditor_3.png>
+Package pdftex.def Info: figures/05_ateditor_3.png  used on input line 181.
+(pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
+ [31 <./figures/05_ateditor_1.png> <./figures/05_ateditor_2.png>]
+<figures/05_ateditor_4.png, id=509, 784.43062pt x 578.91281pt>
+File: figures/05_ateditor_4.png Graphic file (type png)
+<use figures/05_ateditor_4.png>
+Package pdftex.def Info: figures/05_ateditor_4.png  used on input line 190.
+(pdftex.def)             Requested size: 369.88582pt x 272.98123pt.
+<figures/05_docgen_1.png, id=510, 918.43124pt x 569.87906pt>
+File: figures/05_docgen_1.png Graphic file (type png)
+<use figures/05_docgen_1.png>
+Package pdftex.def Info: figures/05_docgen_1.png  used on input line 201.
+(pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
+ [32 <./figures/05_ateditor_3.png> <./figures/05_ateditor_4.png>]
+<figures/05_docgen_2.png, id=518, 918.43124pt x 569.87906pt>
+File: figures/05_docgen_2.png Graphic file (type png)
+<use figures/05_docgen_2.png>
+Package pdftex.def Info: figures/05_docgen_2.png  used on input line 209.
+(pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
+) [33 <./figures/05_docgen_1.png> <./figures/05_docgen_2.png>]
 \openout2 = `content/06_case-study.aux'.
 
  (content/06_case-study.tex
 6. fejezet.
-) [30
+) [34
 
 
 
@@ -991,7 +1041,7 @@ Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
 
  (content/07_summary.tex
 7. fejezet.
-) [31
+) [35
 
 
 
@@ -1000,7 +1050,7 @@ Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
 \tf@thm=\write5
 \openout5 = `thesis.thm'.
 
- [32
+ [36
 
 
 
@@ -1014,10 +1064,10 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 356FC0070A1AB2AB260B41F4BED1BCAE;9660.
  ) 
 Here is how much of TeX's memory you used:
- 16863 strings out of 478582
- 282834 string characters out of 2843400
- 586604 words of memory out of 3000000
- 34623 multiletter control sequences out of 15000+600000
+ 16942 strings out of 478582
+ 284855 string characters out of 2843400
+ 587147 words of memory out of 3000000
+ 34684 multiletter control sequences out of 15000+600000
  523126 words of font info for 61 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,8n,66p,1147b,508s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1030,9 +1080,9 @@ fb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc1
 10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
 r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb>
-Output written on thesis.pdf (38 pages, 1845066 bytes).
+Output written on thesis.pdf (42 pages, 2300437 bytes).
 PDF statistics:
- 542 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 489 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 92 named destinations out of 1000 (max. 500000)
+ 534 words of extra memory for PDF output out of 10000 (max. 10000000)
 
