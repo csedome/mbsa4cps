@@ -47,5 +47,6 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {5.3.4}Támadási fa szerkesztő felület}{31}{subsection.5.3.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {5.3.5}Dokumentum generátor}{33}{subsection.5.3.5}%
 \select@language {magyar} \contentsline {chapter}{\numberline {6}Esettanulmány}{34}{chapter.6}%
-\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{35}{chapter.7}%
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{36}{chapter.7}%
+\select@language {magyar} \contentsline {section}{\numberline {6.1}Károkozások és értékek azonosítása}{35}{section.6.1}%
+\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{38}{chapter.7}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{39}{chapter.7}%

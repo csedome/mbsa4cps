@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_xNci8Ar6Ee-FqPpmzDGbRQ/26 ../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_xNci8Qr6Ee-FqPpmzDGbRQ">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:hu="http:///schemas/hu/_uyws0BHXEe-UNuulsdJU4g/27" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/hu/_uyws0BHXEe-UNuulsdJU4g/27 ../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_uyyiABHXEe-UNuulsdJU4g">
   <uml:Model xmi:id="_cjD9gPXQEe6yUs2YwO9X6Q" name="Diagnostics">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_csu24PXQEe6yUs2YwO9X6Q">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -9,38 +9,6 @@
         <body>Abuse case diagram: A way of modelling misuses of the product similiarly to regular use cases.</body>
       </ownedComment>
       <packagedElement xmi:type="uml:Actor" xmi:id="_QE8agPXREe6DI8aRwY-w-w" name="Attacker"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_RtY_APXREe6DI8aRwY-w-w" name="Manage cryptographic material"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_Us2ZwPXREe6DI8aRwY-w-w" name="DS-CRYPTM-02 Remove cryptographic material" visibility="package"/>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_V7EgYPXREe6DI8aRwY-w-w" name="DS-CRYPTM-00 Leak cryptographic material"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_Yv-Q8PXREe6DI8aRwY-w-w" memberEnd="_YwGMwPXREe6DI8aRwY-w-w _YwGz0PXREe6DI8aRwY-w-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_YwCiYPXREe6DI8aRwY-w-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_YwCiYfXREe6DI8aRwY-w-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_YwGMwPXREe6DI8aRwY-w-w" name="effect steering behavior" type="_RtY_APXREe6DI8aRwY-w-w" association="_Yv-Q8PXREe6DI8aRwY-w-w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_YwGz0PXREe6DI8aRwY-w-w" name="attacker" type="_QE8agPXREe6DI8aRwY-w-w" association="_Yv-Q8PXREe6DI8aRwY-w-w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_ZZ7M4PXREe6DI8aRwY-w-w" memberEnd="_ZaAFYfXREe6DI8aRwY-w-w _ZaAscPXREe6DI8aRwY-w-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZZ_eUPXREe6DI8aRwY-w-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ZaAFYPXREe6DI8aRwY-w-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ZaAFYfXREe6DI8aRwY-w-w" name="take over steering" type="_Us2ZwPXREe6DI8aRwY-w-w" association="_ZZ7M4PXREe6DI8aRwY-w-w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_ZaAscPXREe6DI8aRwY-w-w" name="effect steering behavior" type="_RtY_APXREe6DI8aRwY-w-w" association="_ZZ7M4PXREe6DI8aRwY-w-w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_aEt2UPXREe6DI8aRwY-w-w" memberEnd="_aEvrgfXREe6DI8aRwY-w-w _aEwSkPXREe6DI8aRwY-w-w">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aEvEcPXREe6DI8aRwY-w-w" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aEvrgPXREe6DI8aRwY-w-w" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aEvrgfXREe6DI8aRwY-w-w" name="block steering" type="_V7EgYPXREe6DI8aRwY-w-w" association="_aEt2UPXREe6DI8aRwY-w-w"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_aEwSkPXREe6DI8aRwY-w-w" name="effect steering behavior" type="_RtY_APXREe6DI8aRwY-w-w" association="_aEt2UPXREe6DI8aRwY-w-w"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_dMpwcA5jEe-fnd43eqFI5Q" name="DS-CRYPTM-01 Change cryptographic material"/>
-      <packagedElement xmi:type="uml:Association" xmi:id="_jHunwA5jEe-fnd43eqFI5Q" memberEnd="_jHy5MA5jEe-fnd43eqFI5Q _jH0HUA5jEe-fnd43eqFI5Q">
-        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jHwc8A5jEe-fnd43eqFI5Q" source="org.eclipse.papyrus">
-          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jHxrEA5jEe-fnd43eqFI5Q" key="nature" value="UML_Nature"/>
-        </eAnnotations>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_jHy5MA5jEe-fnd43eqFI5Q" name="change cryptographic material" type="_dMpwcA5jEe-fnd43eqFI5Q" association="_jHunwA5jEe-fnd43eqFI5Q"/>
-        <ownedEnd xmi:type="uml:Property" xmi:id="_jH0HUA5jEe-fnd43eqFI5Q" name="manage cryptographic material" type="_RtY_APXREe6DI8aRwY-w-w" association="_jHunwA5jEe-fnd43eqFI5Q"/>
-      </packagedElement>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_nPmcEA5jEe-fnd43eqFI5Q" name="Update software"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_tZbhEA5jEe-fnd43eqFI5Q" memberEnd="_tZd9UA5jEe-fnd43eqFI5Q _tZd9UQ5jEe-fnd43eqFI5Q">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tZcvMA5jEe-fnd43eqFI5Q" source="org.eclipse.papyrus">
@@ -81,7 +49,7 @@
         <ownedEnd xmi:type="uml:Property" xmi:id="_SmBTgg5kEe-fnd43eqFI5Q" name="update software" type="_nPmcEA5jEe-fnd43eqFI5Q" association="_SmAscA5kEe-fnd43eqFI5Q"/>
         <ownedEnd xmi:type="uml:Property" xmi:id="_SmBTgw5kEe-fnd43eqFI5Q" name="remove software" type="_K2pNAA5kEe-fnd43eqFI5Q" association="_SmAscA5kEe-fnd43eqFI5Q"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:UseCase" xmi:id="_MW0iEA8vEe-Nre8cfFN6mA" name="DS-SECDIAG-00 Leak unauthorized data"/>
+      <packagedElement xmi:type="uml:UseCase" xmi:id="_MW0iEA8vEe-Nre8cfFN6mA" name="DS-SECDIAG-00 Leak confidential data"/>
       <packagedElement xmi:type="uml:UseCase" xmi:id="_ZC8PYA8vEe-Nre8cfFN6mA" name="DS-SECDIAG-01 Access unauthorized functionality"/>
       <packagedElement xmi:type="uml:Association" xmi:id="_euvUkA8vEe-Nre8cfFN6mA" memberEnd="_eu00IA8vEe-Nre8cfFN6mA _eu2CQA8vEe-Nre8cfFN6mA">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_euy-8A8vEe-Nre8cfFN6mA" source="org.eclipse.papyrus">
@@ -113,44 +81,36 @@
       <packagedElement xmi:type="uml:Component" xmi:id="_VNpFUPtFEe6M-OxlxbXykg" name="Software Update"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_WwjpkPtFEe6M-OxlxbXykg" name="CAN Message"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_emRooPtFEe6M-OxlxbXykg" name="CAN Connector"/>
-      <packagedElement xmi:type="uml:Component" xmi:id="_ZtAkUA5kEe-fnd43eqFI5Q" name="Crypto Material Management"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_czOHUA5kEe-fnd43eqFI5Q" name="Diagnostic Authentication"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_kRM70A5kEe-fnd43eqFI5Q" name="UDS Message"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_m4V9MA5kEe-fnd43eqFI5Q" name="Software"/>
-      <packagedElement xmi:type="uml:Component" xmi:id="_3TtNQA8xEe-Nre8cfFN6mA" name="Cryptographic Material"/>
       <packagedElement xmi:type="uml:Component" xmi:id="_5ItnEA8xEe-Nre8cfFN6mA" name="Diagnostic Data"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_pZdbgAr1Ee-FqPpmzDGbRQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_gXerYAr6Ee-FqPpmzDGbRQ" source="PapyrusVersion">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gXerYQr6Ee-FqPpmzDGbRQ" key="Version" value="0.0.25"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gXerYgr6Ee-FqPpmzDGbRQ" key="Comment" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gXerYwr6Ee-FqPpmzDGbRQ" key="Copyright" value=""/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gXerZAr6Ee-FqPpmzDGbRQ" key="Date" value="2024-05-05"/>
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_gXerZQr6Ee-FqPpmzDGbRQ" key="Author" value=""/>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_lh7DcBUgEe-k4qXj0qm8gQ" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lh7DcRUgEe-k4qXj0qm8gQ" key="Version" value="0.0.28"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lh7DchUgEe-k4qXj0qm8gQ" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lh7DcxUgEe-k4qXj0qm8gQ" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lh7DdBUgEe-k4qXj0qm8gQ" key="Date" value="2024-05-14"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_lh7DdRUgEe-k4qXj0qm8gQ" key="Author" value=""/>
       </eAnnotations>
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pZeCkAr1Ee-FqPpmzDGbRQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_xNci8Qr6Ee-FqPpmzDGbRQ"/>
+        <references xmi:type="ecore:EPackage" href="../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_uyyiABHXEe-UNuulsdJU4g"/>
       </eAnnotations>
       <appliedProfile xmi:type="uml:Profile" href="../hu.bme.mit.thesis.cybersecurity/hu.bme.mit.thesis.cybersecurity.profile.uml#_-WiXkPdbEe6_stnQ67IcSQ"/>
     </profileApplication>
   </uml:Model>
-  <hu:damage_scenario xmi:id="_LZ73EAhgEe-Xebjf9hmNgg" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" lossOfAvailability="true"/>
   <hu:functionality xmi:id="_fPz1UAhgEe-Xebjf9hmNgg" base_Component="_VNpFUPtFEe6M-OxlxbXykg"/>
   <hu:component xmi:id="__Gw_0AhgEe-Xebjf9hmNgg" integrity="true" availability="true" base_Component="_emRooPtFEe6M-OxlxbXykg"/>
   <hu:information xmi:id="__uCbMAhgEe-Xebjf9hmNgg" confidentiality="true" integrity="true" availability="true" base_Component="_WwjpkPtFEe6M-OxlxbXykg"/>
-  <hu:damage_scenario xmi:id="_6T0D0Ar1Ee-FqPpmzDGbRQ" base_UseCase="_Us2ZwPXREe6DI8aRwY-w-w" lossOfIntegrity="true" lossOfAvailability="true"/>
-  <hu:damage_scenario xmi:id="_ByCv8Ar2Ee-FqPpmzDGbRQ" base_UseCase="_V7EgYPXREe6DI8aRwY-w-w" lossOfAvailability="true"/>
-  <hu:damage_scenario xmi:id="_x5OGIA5jEe-fnd43eqFI5Q" base_UseCase="_dMpwcA5jEe-fnd43eqFI5Q" lossOfIntegrity="true"/>
   <hu:damage_scenario xmi:id="_NIgh8A5kEe-fnd43eqFI5Q" base_UseCase="_BhVqgA5kEe-fnd43eqFI5Q" lossOfConfidentiality="true"/>
   <hu:damage_scenario xmi:id="_PFfzEA5kEe-fnd43eqFI5Q" base_UseCase="_GW9VoA5kEe-fnd43eqFI5Q" lossOfIntegrity="true"/>
   <hu:damage_scenario xmi:id="_UeAI0A5kEe-fnd43eqFI5Q" base_UseCase="_K2pNAA5kEe-fnd43eqFI5Q" lossOfAvailability="true"/>
-  <hu:functionality xmi:id="_ZtDnrw5kEe-fnd43eqFI5Q" base_Component="_ZtAkUA5kEe-fnd43eqFI5Q"/>
   <hu:functionality xmi:id="_czRKoA5kEe-fnd43eqFI5Q" base_Component="_czOHUA5kEe-fnd43eqFI5Q"/>
   <hu:information xmi:id="_kRQmMA5kEe-fnd43eqFI5Q" confidentiality="true" integrity="true" availability="true" base_Component="_kRM70A5kEe-fnd43eqFI5Q"/>
   <hu:information xmi:id="_m4XLUA5kEe-fnd43eqFI5Q" confidentiality="true" integrity="true" availability="true" base_Component="_m4V9MA5kEe-fnd43eqFI5Q"/>
   <hu:damage_scenario xmi:id="_tSyz4A8vEe-Nre8cfFN6mA" base_UseCase="_MW0iEA8vEe-Nre8cfFN6mA" lossOfConfidentiality="true"/>
   <hu:damage_scenario xmi:id="_uMKE0A8vEe-Nre8cfFN6mA" base_UseCase="_ZC8PYA8vEe-Nre8cfFN6mA" lossOfIntegrity="true"/>
   <hu:damage_scenario xmi:id="_u7hFMA8vEe-Nre8cfFN6mA" base_UseCase="_lHj30A8vEe-Nre8cfFN6mA" lossOfAvailability="true"/>
-  <hu:information xmi:id="_JxunwA8yEe-Nre8cfFN6mA" confidentiality="true" integrity="true" availability="true" base_Component="_3TtNQA8xEe-Nre8cfFN6mA"/>
   <hu:information xmi:id="_KssbMA8yEe-Nre8cfFN6mA" confidentiality="true" base_Component="_5ItnEA8xEe-Nre8cfFN6mA"/>
 </xmi:XMI>

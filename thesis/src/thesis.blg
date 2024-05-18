@@ -49,45 +49,45 @@ Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskait
 while executing---line 1875 of file huplain.bst
 Too many commas in name 1 of "Bryans J., Liew L. S., Nguyen H. N., Sabaliauskaite G., Shaikh S., Zhou F." for entry Bryans
 while executing---line 1875 of file huplain.bst
-You've used 12 entries,
+You've used 15 entries,
             4991 wiz_defined-function locations,
-            1181 strings with 13031 characters,
-and the built_in function-call counts, 33459 in all, are:
-= -- 6545
-> -- 78
+            1194 strings with 13318 characters,
+and the built_in function-call counts, 40032 in all, are:
+= -- 7807
+> -- 99
 < -- 0
-+ -- 2550
-- -- 45
-* -- 295
-:= -- 833
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 48
++ -- 3043
+- -- 57
+* -- 355
+:= -- 1037
+add.period$ -- 15
+call.type$ -- 15
+change.case$ -- 60
 chr.to.int$ -- 0
-cite$ -- 13
-duplicate$ -- 5196
-empty$ -- 530
-format.name$ -- 22
-if$ -- 7121
+cite$ -- 16
+duplicate$ -- 6206
+empty$ -- 662
+format.name$ -- 28
+if$ -- 8527
 int.to.chr$ -- 0
-int.to.str$ -- 12
+int.to.str$ -- 15
 missing$ -- 0
-newline$ -- 143
-num.names$ -- 22
-pop$ -- 1404
+newline$ -- 155
+num.names$ -- 28
+pop$ -- 1671
 preamble$ -- 1
-purify$ -- 36
+purify$ -- 45
 quote$ -- 22
-skip$ -- 216
+skip$ -- 270
 stack$ -- 0
-substring$ -- 4013
-swap$ -- 3924
+substring$ -- 4785
+swap$ -- 4678
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 60
+type$ -- 75
 warning$ -- 1
-while$ -- 104
-width$ -- 14
-write$ -- 187
+while$ -- 131
+width$ -- 17
+write$ -- 211
 (There were 6 error messages)

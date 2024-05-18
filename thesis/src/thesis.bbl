@@ -102,6 +102,15 @@ ASPICE:
 Nguyen H. N. Sabaliauskaite G. Shaikh S. Zhou~F. Bryans~J., Liew L.~S.:
 \bibNewBlock A template-based method for the generation of attack trees, 2020.
 
+\bibitem{ISO14229}
+ISO:
+\bibNewBlock Iso 14229 "road vehicles — unified diagnostic services (uds)",
+  2020.
+
+\bibitem{ISO21434}
+ISO/SAE:
+\bibNewBlock Iso/sae 21434 "road vehicles - cybersecurity engineering", 2021.
+
 \bibitem{Karahasanovic}
 Almgren~M. Karahasanovic~A., Kleberger~P.:
 \bibNewBlock Adapting threat modeling methods for the automotive industry,
@@ -111,6 +120,11 @@ Almgren~M. Karahasanovic~A., Kleberger~P.:
 Khaled Karray:
 \bibNewBlock Cyber-security of connected vehicles : contributions to enhance
   the risk analysis and security of in-vehicle communications, 2020.
+
+\bibitem{ISOOSI}
+Ramin Tavakoli~Kolagari Markus~Zoppelt:
+\bibNewBlock Reaching grey havens: Industrial automotive security modeling with
+  sam, 2019.
 
 \bibitem{Bohner}
 Alexander~Much Martin~Böhner, Alexander~Mattausch:
