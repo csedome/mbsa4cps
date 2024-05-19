@@ -8,7 +8,7 @@ Az ISO 14229\cite{ISO14229} definiálja az Unified Diagnostic Services (röviden
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=130mm, keepaspectratio]{figures/06_isoosi.jpg}
+	\includegraphics[width=120mm, keepaspectratio]{figures/06_isoosi.jpg}
 	\caption{ISO/OSI modell autóipari kommunikációs protokollokra\cite{ISOOSI}}
 \end{figure}
 
@@ -50,13 +50,70 @@ A \ref{fig:diag_abuse} ábrán láthatóak a potenciális károkozások. A korá
 
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=130mm, keepaspectratio]{figures/06_01_abuse_case_diagram.PNG}
+	\includegraphics[width=120mm, keepaspectratio]{figures/06_01_abuse_case_diagram.PNG}
 	\caption{Diagnosztika kihasználási esetei}
 	\label{fig:diag_abuse}
 \end{figure}
 
+A termékleíráshoz funkcionalitásokat definiáltuk, kellenek még az ezek által dependált értékek. HW-es komponensből egyedül a CAN csatlakozó hozható fel hiszen azon fog keresztül utazni a bejövő UDS üzenet. SW-szintű értékekből vehetjük a CAN üzenetet amiben utazik az UDS üzenet, maga az UDS üzenet, valamint az az által szállított adatok. Ez a szállított adat a szoftverfrissítés esetén a szoftver lesz, egyébként pedig diagnosztikai adatok lehetnek elérhetőek kiolvasásra az autentikációt követően.
+
+A termékleírás ábrázolva a \ref{fig:item_def} ábrán látható. A sztereotípiák felvétele után volt lehetőségem az attributálásra, ezt a következőképpen tettem meg:
+\begin{itemize}
+	\item \textbf{Diagnostic Authentication}: A károkozásokból származtathatóan a CIA minden tulajdonsága vonatkozik a funkcionalitásra
+	\item \textbf{Software Update}: A károkozásokból származtathatóan a CIA minden tulajdonsága vonatkozik a funkcionalitásra
+	\item \textbf{CAN Connector}
+	\subitem Sértetlenség: Egy CAN csatlakozó integritását megsértve, kártékony eszközökkel kerülhet kapcsolatba az elemzés tárgyaként szereplő ECU
+	\subitem Elérhetőség: Egy CAN csatlakozó elérhetőségét megsértve, a beérkező üzenetek hiányára kell felkészülni
+	\item \textbf{CAN Message}
+	\subitem Bizalmasság: Az üzenet tartalmazhat bizalmas információt amely segíthet további támadások esetén
+	\subitem Sértetlenség: Az üzenet tartalma változtatható, ezzel a fogadó félnél kiváltott reakció is
+	\subitem Elérhetőség: Az üzenet blokkolható, a hiánya a fogadó félnél nem zárható ki
+	\item \textbf{UDS Message}
+	\subitem Bizalmasság: Az üzenet tartalmazhat bizalmas információt amely segíthet további támadások esetén
+	\subitem Sértetlenség: Az üzenet tartalma változtatható, ezzel a fogadó félnél kiváltott reakció is
+	\subitem Elérhetőség: Az üzenet blokkolható, a hiánya a fogadó félnél nem zárható ki
+	\item \textbf{Software}
+	\subitem Bizalmasság: A szoftver a fejlesztő cég szellemi tulajdona, ennek kiszivárgása egyrészről anyagi kárt, másrészről további támadások elvégzését is segítheti
+	\subitem Sértetlenség: A szoftver változtatható, ezzel a futtató ECU működése is
+	\subitem Elérhetőség: A szoftver törölhető, hiánya az ECU biztonságos működését befolyásolhatja
+	\item \textbf{Diagnostic Data}
+	\subitem Bizalmasság: Az üzenet tartalmazhat bizalmas információt amely segíthet további támadások esetén
+\end{itemize}
+
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[width=130mm, keepaspectratio]{figures/06_02_item_definition_diagram.PNG}
+	\includegraphics[width=120mm, keepaspectratio]{figures/06_02_item_definition_diagram.PNG}
 	\caption{Diagnosztika termékleírása}
+	\label{fig:item_def}
 \end{figure}
+
+\section{Fenyegetésmodell származtatása}
+
+Az Acceleo szkript futtatása a következő fájlt hozza létre Diagnostics.apeditor néven:
+
+\begin{lstlisting}[basicstyle=\tiny]
+<apeditor:ThreatModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:apeditor="hu.bme.mit.thesis.apeditor">
+<damagescenarios name="DS-SECSW-00 Leak software" lossOfConfidentiality="true" lossOfIntegrity="false" lossOfAvailability="false"/>
+<damagescenarios name="DS-SECSW-01 Change software" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+<damagescenarios name="DS-SECSW-02 Remove software" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+<damagescenarios name="DS-SECDIAG-00 Leak confidential data" lossOfConfidentiality="true" lossOfIntegrity="false" lossOfAvailability="false"/>
+<damagescenarios name="DS-SECDIAG-01 Access unauthorized functionality" lossOfConfidentiality="false" lossOfIntegrity="true" lossOfAvailability="false"/>
+<damagescenarios name="DS-SECDIAG-02 Block authentication attempts" lossOfConfidentiality="false" lossOfIntegrity="false" lossOfAvailability="true"/>
+<asset xsi:type="apeditor:Functionality" name="Software Update"/>
+<asset xsi:type="apeditor:Functionality" name="Diagnostic Authentication"/>
+<asset xsi:type="apeditor:Component" name="CAN Connector" confidentiality="false" integrity="true" availability="true"/>
+<asset xsi:type="apeditor:Information" name="CAN Message" confidentiality="true" integrity="true" availability="true"/>
+<asset xsi:type="apeditor:Information" name="UDS Message" confidentiality="true" integrity="true" availability="true"/>
+<asset xsi:type="apeditor:Information" name="Software" confidentiality="true" integrity="true" availability="true"/>
+<asset xsi:type="apeditor:Information" name="Diagnostic Data" confidentiality="true" integrity="false" availability="false"/>
+</apeditor:ThreatModel>
+\end{lstlisting}
+
+\section{Fenyegetésmodellezés}
+
+A generált fájl innentől beimportálható és megnyitható olyan Eclipse környezettel amelyhez az elemzőeszköz plugin fájljai hozzá vannak adva.
+
+A dependenciák meghatározásánál a károkozásokhoz hozzátudjuk rendelni a funkcionalitást viszonylag egyértelműen, maga az azonosítójuk is jelzi melyik károkozás melyik funkcióhoz tartozik.
+
+Továbbá mindkét funkcionalitáshoz tartozik a \textbf{CAN Connector} mint HW komponens valamint a \textbf{CAN Message} és \textbf{UDS Message} mint információ. Amiben a két funkcionalitás eltér, hogy ameddig a \textbf{Software Update} esetén az érkező üzenetek a \textbf{Software}-t tartalmazzák, addig az autentikáció után elsősorban a kimenő \textbf{Diagnostic Data} az érték amit védeni akarunk.
+
