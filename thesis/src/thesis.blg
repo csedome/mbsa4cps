@@ -24,8 +24,6 @@ A level-1 auxiliary file: content/06_case-study.aux
 Reallocating 'name_of_file' (item size: 1) to 23 items.
 A level-1 auxiliary file: content/07_summary.aux
 Reallocating 'name_of_file' (item size: 1) to 10 items.
-Reallocating 'name_of_file' (item size: 1) to 26 items.
-A level-1 auxiliary file: content/FF_appendices.aux
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
@@ -75,7 +73,7 @@ Too many commas in name 1 of "Kacper Sowka, Vasile Palade, Hesamaldin Jadidbonab
 while executing---line 1875 of file huplain.bst
 You've used 19 entries,
             4991 wiz_defined-function locations,
-            1207 strings with 13668 characters,
+            1206 strings with 13643 characters,
 and the built_in function-call counts, 47503 in all, are:
 = -- 9164
 > -- 188

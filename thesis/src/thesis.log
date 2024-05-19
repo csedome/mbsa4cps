@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  19 MAY 2024 20:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  19 MAY 2024 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -654,7 +654,7 @@ LaTeX Info: Redefining \mit on input line 578.
 
 (include/titlepage.tex
 Package hyperref Info: Option `pageanchor' set `false' on input line 1.
-<figures/00_BME.pdf, id=226, 705.63625pt x 188.705pt>
+<figures/00_BME.pdf, id=230, 705.63625pt x 188.705pt>
 File: figures/00_BME.pdf Graphic file (type pdf)
 <use figures/00_BME.pdf>
 Package pdftex.def Info: figures/00_BME.pdf  used on input line 7.
@@ -782,7 +782,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<figures/ecu.png, id=322, 750.805pt x 500.87125pt>
+<figures/ecu.png, id=327, 750.805pt x 500.87125pt>
 File: figures/ecu.png Graphic file (type png)
 <use figures/ecu.png>
 Package pdftex.def Info: figures/ecu.png  used on input line 48.
@@ -804,7 +804,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-<figures/bentley.jpg, id=328, 628.3475pt x 353.32pt>
+<figures/bentley.jpg, id=333, 628.3475pt x 353.32pt>
 File: figures/bentley.jpg Graphic file (type jpg)
 <use figures/bentley.jpg>
 Package pdftex.def Info: figures/bentley.jpg  used on input line 57.
@@ -815,7 +815,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
  []
 
 [4] [5 <./figures/ecu.png> <./figures/bentley.jpg>] [6] [7] [8] [9]
-<figures/02_ASPICE.png, id=366, 597.432pt x 301.125pt>
+<figures/02_ASPICE.png, id=371, 597.432pt x 301.125pt>
 File: figures/02_ASPICE.png Graphic file (type png)
 <use figures/02_ASPICE.png>
 Package pdftex.def Info: figures/02_ASPICE.png  used on input line 206.
@@ -855,7 +855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<figures/03_MA.png, id=389, 573.14125pt x 415.5525pt>
+<figures/03_MA.png, id=394, 573.14125pt x 415.5525pt>
 File: figures/03_MA.png Graphic file (type png)
 <use figures/03_MA.png>
 Package pdftex.def Info: figures/03_MA.png  used on input line 30.
@@ -870,17 +870,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<figures/03_CHULP.png, id=405, 305.64188pt x 487.06969pt>
+<figures/03_CHULP.png, id=410, 305.64188pt x 487.06969pt>
 File: figures/03_CHULP.png Graphic file (type png)
 <use figures/03_CHULP.png>
 Package pdftex.def Info: figures/03_CHULP.png  used on input line 55.
 (pdftex.def)             Requested size: 213.39566pt x 340.06203pt.
-<figures/03_CHULP_EDD.png, id=408, 460.72125pt x 305.34074pt>
+<figures/03_CHULP_EDD.png, id=413, 460.72125pt x 305.34074pt>
 File: figures/03_CHULP_EDD.png Graphic file (type png)
 <use figures/03_CHULP_EDD.png>
 Package pdftex.def Info: figures/03_CHULP_EDD.png  used on input line 62.
 (pdftex.def)             Requested size: 355.65944pt x 235.70946pt.
-<figures/03_CHULP_AT.png, id=413, 449.88075pt x 203.5605pt>
+<figures/03_CHULP_AT.png, id=418, 449.88075pt x 203.5605pt>
 File: figures/03_CHULP_AT.png Graphic file (type png)
 <use figures/03_CHULP_AT.png>
 Package pdftex.def Info: figures/03_CHULP_AT.png  used on input line 73.
@@ -905,7 +905,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  (content/04_analysis-method.tex
 4. fejezet.
-<figures/04_overview.png, id=447, 583.42969pt x 633.11531pt>
+<figures/04_overview.png, id=452, 583.42969pt x 633.11531pt>
 File: figures/04_overview.png Graphic file (type png)
 <use figures/04_overview.png>
 Package pdftex.def Info: figures/04_overview.png  used on input line 25.
@@ -921,7 +921,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 [20 <./figures/04_overview.png>]
-<figures/04_abuse_case.png, id=458, 844.15375pt x 342.27875pt>
+<figures/04_abuse_case.png, id=463, 844.15375pt x 342.27875pt>
 File: figures/04_abuse_case.png Graphic file (type png)
 <use figures/04_abuse_case.png>
 Package pdftex.def Info: figures/04_abuse_case.png  used on input line 44.
@@ -931,20 +931,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
-<figures/04_item_definition.PNG, id=460, 767.86874pt x 251.94125pt>
+<figures/04_item_definition.PNG, id=465, 767.86874pt x 251.94125pt>
 File: figures/04_item_definition.PNG Graphic file (type png)
 <use figures/04_item_definition.PNG>
 Package pdftex.def Info: figures/04_item_definition.PNG  used on input line 65.
 
 (pdftex.def)             Requested size: 369.88582pt x 121.36482pt.
 [21 <./figures/04_abuse_case.png>]
-<figures/04_dependencies.png, id=468, 452.4403pt x 296.60812pt>
+<figures/04_dependencies.png, id=473, 452.4403pt x 296.60812pt>
 File: figures/04_dependencies.png Graphic file (type png)
 <use figures/04_dependencies.png>
 Package pdftex.def Info: figures/04_dependencies.png  used on input line 92.
 (pdftex.def)             Requested size: 369.88582pt x 242.48703pt.
  [22 <./figures/04_item_definition.PNG>]
-<figures/04_attack_tree.png, id=475, 6968.0325pt x 7224.9925pt>
+<figures/04_attack_tree.png, id=480, 6968.0325pt x 7224.9925pt>
 File: figures/04_attack_tree.png Graphic file (type png)
 <use figures/04_attack_tree.png>
 Package pdftex.def Info: figures/04_attack_tree.png  used on input line 125.
@@ -956,7 +956,7 @@ Package pdftex.def Info: figures/04_attack_tree.png  used on input line 125.
 
  (content/05_analysis-tool.tex
 5. fejezet.
-<figures/05_overview.png, id=494, 1005.7575pt x 1115.16624pt>
+<figures/05_overview.png, id=499, 1005.7575pt x 1115.16624pt>
 File: figures/05_overview.png Graphic file (type png)
 <use figures/05_overview.png>
 Package pdftex.def Info: figures/05_overview.png  used on input line 13.
@@ -967,20 +967,20 @@ Package pdftex.def Info: figures/05_overview.png  used on input line 13.
 
 
 ]
-<figures/05_Profile_Diagram.PNG, id=498, 753.81625pt x 361.35pt>
+<figures/05_Profile_Diagram.PNG, id=503, 753.81625pt x 361.35pt>
 File: figures/05_Profile_Diagram.PNG Graphic file (type png)
 <use figures/05_Profile_Diagram.PNG>
 Package pdftex.def Info: figures/05_Profile_Diagram.PNG  used on input line 38.
 
 (pdftex.def)             Requested size: 369.88582pt x 177.30565pt.
  [27 <./figures/05_overview.png>]
-<figures/05_package_tmgen.png, id=505, 623.32875pt x 372.39125pt>
+<figures/05_package_tmgen.png, id=510, 623.32875pt x 372.39125pt>
 File: figures/05_package_tmgen.png Graphic file (type png)
 <use figures/05_package_tmgen.png>
 Package pdftex.def Info: figures/05_package_tmgen.png  used on input line 51.
 (pdftex.def)             Requested size: 369.88582pt x 220.98175pt.
  [28 <./figures/05_Profile_Diagram.PNG> <./figures/05_package_tmgen.png>]
-<figures/05_package_apeditor.png, id=514, 595.47469pt x 533.74406pt>
+<figures/05_package_apeditor.png, id=519, 595.47469pt x 533.74406pt>
 File: figures/05_package_apeditor.png Graphic file (type png)
 <use figures/05_package_apeditor.png>
 Package pdftex.def Info: figures/05_package_apeditor.png  used on input line 68
@@ -1004,57 +1004,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 t-ben de-fi-ni-ált funk-ci-o-na-li-tás
  []
 
-<figures/05_metamodel.png, id=520, 5669.18pt x 3724.91624pt>
+<figures/05_metamodel.png, id=525, 5669.18pt x 3724.91624pt>
 File: figures/05_metamodel.png Graphic file (type png)
 <use figures/05_metamodel.png>
 Package pdftex.def Info: figures/05_metamodel.png  used on input line 98.
 (pdftex.def)             Requested size: 369.88582pt x 242.98062pt.
 [30 <./figures/05_metamodel.png>]
-<figures/05_tmeditor_ds.png, id=527, 749.80125pt x 514.17094pt>
+<figures/05_tmeditor_ds.png, id=532, 749.80125pt x 514.17094pt>
 File: figures/05_tmeditor_ds.png Graphic file (type png)
 <use figures/05_tmeditor_ds.png>
 Package pdftex.def Info: figures/05_tmeditor_ds.png  used on input line 126.
 (pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
-<figures/05_tmeditor.png, id=529, 749.80125pt x 514.17094pt>
+<figures/05_tmeditor.png, id=534, 749.80125pt x 514.17094pt>
 File: figures/05_tmeditor.png Graphic file (type png)
 <use figures/05_tmeditor.png>
 Package pdftex.def Info: figures/05_tmeditor.png  used on input line 143.
 (pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
  [31 <./figures/05_tmeditor_ds.png>]
-<figures/05_at_inited.png, id=537, 749.80125pt x 514.17094pt>
+<figures/05_at_inited.png, id=542, 749.80125pt x 514.17094pt>
 File: figures/05_at_inited.png Graphic file (type png)
 <use figures/05_at_inited.png>
 Package pdftex.def Info: figures/05_at_inited.png  used on input line 152.
 (pdftex.def)             Requested size: 369.88582pt x 253.64847pt.
  [32 <./figures/05_tmeditor.png> <./figures/05_at_inited.png>]
-<figures/05_ateditor_1.png, id=546, 807.7678pt x 517.18219pt>
+<figures/05_ateditor_1.png, id=551, 807.7678pt x 517.18219pt>
 File: figures/05_ateditor_1.png Graphic file (type png)
 <use figures/05_ateditor_1.png>
 Package pdftex.def Info: figures/05_ateditor_1.png  used on input line 163.
 (pdftex.def)             Requested size: 369.88582pt x 236.82555pt.
-<figures/05_ateditor_2.png, id=548, 918.43124pt x 569.87906pt>
+<figures/05_ateditor_2.png, id=553, 918.43124pt x 569.87906pt>
 File: figures/05_ateditor_2.png Graphic file (type png)
 <use figures/05_ateditor_2.png>
 Package pdftex.def Info: figures/05_ateditor_2.png  used on input line 172.
 (pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
-<figures/05_ateditor_3.png, id=550, 918.43124pt x 569.87906pt>
+<figures/05_ateditor_3.png, id=555, 918.43124pt x 569.87906pt>
 File: figures/05_ateditor_3.png Graphic file (type png)
 <use figures/05_ateditor_3.png>
 Package pdftex.def Info: figures/05_ateditor_3.png  used on input line 181.
 (pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
  [33 <./figures/05_ateditor_1.png> <./figures/05_ateditor_2.png>]
-<figures/05_ateditor_4.png, id=559, 784.43062pt x 578.91281pt>
+<figures/05_ateditor_4.png, id=564, 784.43062pt x 578.91281pt>
 File: figures/05_ateditor_4.png Graphic file (type png)
 <use figures/05_ateditor_4.png>
 Package pdftex.def Info: figures/05_ateditor_4.png  used on input line 190.
 (pdftex.def)             Requested size: 369.88582pt x 272.98123pt.
-<figures/05_docgen_1.png, id=560, 918.43124pt x 569.87906pt>
+<figures/05_docgen_1.png, id=565, 918.43124pt x 569.87906pt>
 File: figures/05_docgen_1.png Graphic file (type png)
 <use figures/05_docgen_1.png>
 Package pdftex.def Info: figures/05_docgen_1.png  used on input line 201.
 (pdftex.def)             Requested size: 369.88582pt x 229.51279pt.
  [34 <./figures/05_ateditor_3.png> <./figures/05_ateditor_4.png>]
-<figures/05_docgen_2.png, id=568, 918.43124pt x 569.87906pt>
+<figures/05_docgen_2.png, id=573, 918.43124pt x 569.87906pt>
 File: figures/05_docgen_2.png Graphic file (type png)
 <use figures/05_docgen_2.png>
 Package pdftex.def Info: figures/05_docgen_2.png  used on input line 209.
@@ -1069,7 +1069,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-<figures/06_isoosi.jpg, id=578, 642.4pt x 336.25626pt>
+<figures/06_isoosi.jpg, id=583, 642.4pt x 336.25626pt>
 File: figures/06_isoosi.jpg Graphic file (type jpg)
 <use figures/06_isoosi.jpg>
 Package pdftex.def Info: figures/06_isoosi.jpg  used on input line 11.
@@ -1095,14 +1095,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
  []
 
 [37]
-<figures/06_01_abuse_case_diagram.PNG, id=593, 1044.90375pt x 844.15375pt>
+<figures/06_01_abuse_case_diagram.PNG, id=598, 1044.90375pt x 844.15375pt>
 File: figures/06_01_abuse_case_diagram.PNG Graphic file (type png)
 <use figures/06_01_abuse_case_diagram.PNG>
 Package pdftex.def Info: figures/06_01_abuse_case_diagram.PNG  used on input li
 ne 53.
 (pdftex.def)             Requested size: 341.43306pt x 275.84088pt.
  [38 <./figures/06_01_abuse_case_diagram.PNG>]
-<figures/06_02_item_definition_diagram.PNG, id=600, 848.16875pt x 420.57124pt>
+<figures/06_02_item_definition_diagram.PNG, id=605, 848.16875pt x 420.57124pt>
 File: figures/06_02_item_definition_diagram.PNG Graphic file (type png)
 <use figures/06_02_item_definition_diagram.PNG>
 Package pdftex.def Info: figures/06_02_item_definition_diagram.PNG  used on inp
@@ -1113,32 +1113,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
-<figures/AT-SECSW-00.png, id=606, 6663.89626pt x 7542.1775pt>
+<figures/AT-SECSW-00.png, id=611, 6663.89626pt x 7542.1775pt>
 File: figures/AT-SECSW-00.png Graphic file (type png)
 <use figures/AT-SECSW-00.png>
 Package pdftex.def Info: figures/AT-SECSW-00.png  used on input line 132.
 (pdftex.def)             Requested size: 341.43306pt x 386.3377pt.
-<figures/AT-SECSW-01.png, id=607, 9391.085pt x 5351.995pt>
+<figures/AT-SECSW-01.png, id=612, 9391.085pt x 5351.995pt>
 File: figures/AT-SECSW-01.png Graphic file (type png)
 <use figures/AT-SECSW-01.png>
 Package pdftex.def Info: figures/AT-SECSW-01.png  used on input line 140.
 (pdftex.def)             Requested size: 341.43306pt x 194.52547pt.
-<figures/AT-SECSW-02.png, id=608, 6792.37625pt x 7397.6375pt>
+<figures/AT-SECSW-02.png, id=613, 6792.37625pt x 7397.6375pt>
 File: figures/AT-SECSW-02.png Graphic file (type png)
 <use figures/AT-SECSW-02.png>
 Package pdftex.def Info: figures/AT-SECSW-02.png  used on input line 146.
 (pdftex.def)             Requested size: 341.43306pt x 371.82248pt.
-<figures/AT-SECDIAG-00.png, id=609, 7830.25375pt x 6433.03375pt>
+<figures/AT-SECDIAG-00.png, id=614, 7830.25375pt x 6433.03375pt>
 File: figures/AT-SECDIAG-00.png Graphic file (type png)
 <use figures/AT-SECDIAG-00.png>
 Package pdftex.def Info: figures/AT-SECDIAG-00.png  used on input line 152.
 (pdftex.def)             Requested size: 341.43306pt x 280.4433pt.
-<figures/AT-SECDIAG-01.png, id=610, 8577.04375pt x 5861.9pt>
+<figures/AT-SECDIAG-01.png, id=615, 8577.04375pt x 5861.9pt>
 File: figures/AT-SECDIAG-01.png Graphic file (type png)
 <use figures/AT-SECDIAG-01.png>
 Package pdftex.def Info: figures/AT-SECDIAG-01.png  used on input line 158.
 (pdftex.def)             Requested size: 341.43306pt x 233.27328pt.
-<figures/AT-SECDIAG-02.png, id=611, 5951.23375pt x 8444.54875pt>
+<figures/AT-SECDIAG-02.png, id=616, 5951.23375pt x 8444.54875pt>
 File: figures/AT-SECDIAG-02.png Graphic file (type png)
 <use figures/AT-SECDIAG-02.png>
 Package pdftex.def Info: figures/AT-SECDIAG-02.png  used on input line 164.
@@ -1159,12 +1159,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--176
 
  []
 
-<figures/ff_imprate.png, id=643, 813.0375pt x 483.30562pt>
+<figures/ff_imprate.png, id=647, 813.0375pt x 483.30562pt>
 File: figures/ff_imprate.png Graphic file (type png)
 <use figures/ff_imprate.png>
 Package pdftex.def Info: figures/ff_imprate.png  used on input line 179.
 (pdftex.def)             Requested size: 341.43306pt x 202.95747pt.
-<figures/ff_attfeas.png, id=646, 961.34157pt x 534.49687pt>
+<figures/ff_attfeas.png, id=650, 961.34157pt x 534.49687pt>
 File: figures/ff_attfeas.png Graphic file (type png)
 <use figures/ff_attfeas.png>
 Package pdftex.def Info: figures/ff_attfeas.png  used on input line 190.
@@ -1195,20 +1195,14 @@ te.png> <./figures/ff_attfeas.png>]
 (content/03_related-studies.aux) (content/04_analysis-method.aux)
 (content/05_analysis-tool.aux) (content/06_case-study.aux)
 (content/07_summary.aux))
-
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: CE3C0DFB9780159FFE2725B7576823FA;10735
-(rerunfilecheck)             After:  46FCA76CA3FF16609CEDC635F3D9D2AB;10905.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 46FCA76CA3FF16609CEDC635F3D9D2AB;10905.
  ) 
 Here is how much of TeX's memory you used:
- 17398 strings out of 478582
- 290711 string characters out of 2843400
+ 17399 strings out of 478582
+ 290724 string characters out of 2843400
  855303 words of memory out of 3000000
- 35082 multiletter control sequences out of 15000+600000
+ 35083 multiletter control sequences out of 15000+600000
  526483 words of font info for 63 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  65i,8n,66p,1147b,1876s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -1223,9 +1217,9 @@ r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mr6.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
 /lmtl10.pfb>
-Output written on thesis.pdf (54 pages, 5882734 bytes).
+Output written on thesis.pdf (54 pages, 5883280 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
+ 762 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)
- 639 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 647 words of extra memory for PDF output out of 10000 (max. 10000000)
 
