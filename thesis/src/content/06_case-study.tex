@@ -117,3 +117,79 @@ A dependenciák meghatározásánál a károkozásokhoz hozzátudjuk rendelni a 
 
 Továbbá mindkét funkcionalitáshoz tartozik a \textbf{CAN Connector} mint HW komponens valamint a \textbf{CAN Message} és \textbf{UDS Message} mint információ. Amiben a két funkcionalitás eltér, hogy ameddig a \textbf{Software Update} esetén az érkező üzenetek a \textbf{Software}-t tartalmazzák, addig az autentikáció után elsősorban a kimenő \textbf{Diagnostic Data} az érték amit védeni akarunk.
 
+Ebből generált majd megszerkesztett hibafák és elemzésük alább megtekinthető. \\
+
+\section{Támadási fa analízis}
+
+Ahogy az a \ref{fig:ff_leak_sw} ábrán látható a gyökér fenyegetés a \textbf{Software Update} bizalmasságának sértését okozó \textit{Disclosure of Software Update} lesz. Ez azt jelenti, hogy ezt a funkcionalitást vagy az ehhez tartozó diagnosztikai rutinokat olyan módon használják amellyel bizalmas információkhoz juthat a támadó.
+
+Először levontam a következtetést, hogy egyrészről minden lehetséges támadás azzal fog kezdődni, hogy a támadó valahogyan sérti az integritását a CAN busznak vagy a rendszer csatlakozóján vagy az ahhoz kapcsolódó elemek módosításával. Ez jelenthet fizikai hozzáférést vagy amennyiben egy csatlakoztatott eszköz felett szerez irányítást a támadó, abban az esetben ez akár távolról is elvégezhető.
+
+Másodsorban két támadási irányt különítettem el, az egyik esetben a támadó megpróbál olyan diagnosztikai szolgáltatásokat használni amelyekkel a telepített szoftver kinyerhető lenne az eszközből. A másik esetben az éppen folyamatban lévő szoftverfrissítésnél érkező üzenetek lehallgatásával és azok tartalmának visszafejtésével próbálhat a támadó a szoftverhez hozzájutni. Előbbi esetben egy CAN üzenet lehallgatásával (disclosure) hozzájut a CAN ID-khoz és paraméterekkel, majd módosított üzeneteket injektál amelyekkel a szoftver letöltését kezdeményezheti. A másik esetben UDS üzenet lehallgatás és a szoftver visszafejtése történne.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECSW-00.png}
+	\caption{Támadási fa a "Leak software" károkozáshoz} 
+	\label{fig:ff_leak_sw}
+\end{figure}
+
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECSW-01.png}
+	\caption{Támadási fa a "Change software" károkozáshoz} 
+	\label{fig:ff_change_sw}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECSW-02.png}
+	\caption{Támadási fa a "Remove software" károkozáshoz} 
+	\label{fig:ff_remove_sw}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-00.png}
+	\caption{Támadási fa a "Leak confidential data" károkozáshoz} 
+	\label{fig:ff_leak_data}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-01.png}
+	\caption{Támadási fa a "Access unauthorized functionality" károkozáshoz} 
+	\label{fig:ff_access}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-02.png}
+	\caption{Támadási fa a "Block authentication attempts" károkozáshoz} 
+	\label{fig:ff_block_auth}
+\end{figure}
+
+\section{Manuális analízis}
+
+A következő lépés pedig a manuális analízis itt először a hatásérték elemzést, utána pedig a támadás megvalósíthatóság elemzést végezzük el.\\
+
+Ahogy az a \ref{fig:ff_imprate} ábrán látható a SFOP értékek mentén meg lettek határozva a hatásértékei az egyes károkozásoknak.
+
+A legkomolyabb hatások a szoftver megváltoztatásával, törlésével, valamint a korlátozott hozzáférésű funkcionalitások használata lettek. Ezek értelemszerűen nagyobb kockázatot is jelentenek mint mondjuk az autentikációnak a blokkolása. Az elemzés az ISO 21434 \cite{ISO21434} által ajánlott és annak a függelékében lévő példa elemzések mintájára készültek el.\\
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/ff_imprate.png}
+	\caption{Hatásérték elemzés} 
+	\label{fig:ff_imprate}
+\end{figure}
+
+Az \ref{fig:ff_attfeas} ábrán látható az értékelés az Attack Potential Based megközelítést használja, ez szintén az egyik ajánlása az ISO 21434 \cite{ISO21434} szabványnak, valamint szintén annak a függelékében lévő minta alapján készült el ez az elemzés is.
+
+Ezen kiértékelések történhetnek egy szakértő által egyénileg, több stakeholder bevonásával illetve behatolástesztelő mérnökök támogatásával. A kiértékelés a támadó képességei és a rendelkezésre álló információk alapján ad egy becslést a támadási utak megvalósíthatóságára.
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=120mm, keepaspectratio]{figures/ff_attfeas.png}
+	\caption{Támadás megvalósíthatóság elemzés a "Leak software" károkozáshoz} 
+	\label{fig:ff_attfeas}
+\end{figure}
+
+Ezzel befejezve a manuális analízisek eredményeinek a szabvány által leírt kombinációja alapján fog a kiberbiztonsági mérnök előállni a kockázati értékekkel amelyek mentén lehet eldönteni mely támadások azok amelyek valóban nagy kockázattal járnak és amelyekre védelmet kell biztosítani valamilyen formában.

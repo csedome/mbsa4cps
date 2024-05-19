@@ -102,6 +102,14 @@ ASPICE:
 Nguyen H. N. Sabaliauskaite G. Shaikh S. Zhou~F. Bryans~J., Liew L.~S.:
 \bibNewBlock A template-based method for the generation of attack trees, 2020.
 
+\bibitem{toyota}
+Gareth Halfacree.
+
+\bibitem{bentley}
+JOHN~PEARLEY HUFFMAN:
+\bibNewBlock It takes a lot of wiring to keep a modern vehicle moving (witness
+  this bentley’s harness), 2016.
+
 \bibitem{ISO14229}
 ISO:
 \bibNewBlock Iso 14229 "road vehicles — unified diagnostic services (uds)",
@@ -110,6 +118,11 @@ ISO:
 \bibitem{ISO21434}
 ISO/SAE:
 \bibNewBlock Iso/sae 21434 "road vehicles - cybersecurity engineering", 2021.
+
+\bibitem{Sowka}
+Hesamaldin Jadidbonab Paul Wooderson Hoang~Nguyen Kacper~Sowka, Vasile~Palade:
+\bibNewBlock A review on automatic generation of attack trees and its
+  application to automotive cybersecurity, 2023.
 
 \bibitem{Karahasanovic}
 Almgren~M. Karahasanovic~A., Kleberger~P.:
@@ -140,9 +153,8 @@ United Nations:
 \bibNewBlock Un regulation no. 155 - cyber security and cyber security
   management system, 2021.
 
-\bibitem{Sowka}
-A review on automatic generation of attack trees and its application to
-  automotive cybersecurity, 2023.
+\bibitem{tesla}
+Arthur Parkhouse.
 
 \bibitem{Chulp}
 Christoph~Schmittner Sebastian~Chlup, Korbinian~Christl:
@@ -160,5 +172,11 @@ Dr. Vivek~Nigam Yuri Gil~Dantas, Dr. Harald~Ruess:
 \bibitem{Ma}
 C.~Schmittner Z.~Ma:
 \bibNewBlock Threat modeling for automotive security analysis, 2016.
+
+\bibitem{ecu}
+ZF:
+\bibNewBlock Electronic control units.
+\bibNewBlock
+\bibUrll{URL} >https://www.zf.com/products/en/cars/products_65835.html>.
 
 \end{thebibliography}

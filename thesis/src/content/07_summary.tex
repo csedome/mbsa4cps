@@ -1,1 +1,15 @@
 \chapter{Összegzés}
+
+A feladatom összességében sikeresnek mondható és a feladatkiírásban szereplő pontokat sikeresen teljesítette illetve valódi ipari használatra is alkalmasnak mondható.
+
+A dolgozatom elején bemutattam az irodalomban elérhető modellalapú és modellekkel együtt használható kiberbiztonsági analíziseket. Ezekből az analízisekből egyrészről a fenyegetésmodellnek a rendszermodellből való származtatását, illetve az üzembiztonsági analízisekből adaptált támadási fa modell alkalmazását használtam fel a saját elemzésem elvégzésére. 
+
+Megvizsgáltam a rendszermodellek felhasználási lehetőségeit és egy fejlesztett szkript segítségével automatikusan képes voltam fenyegetésmodelleket a rendszermodellből. Itt egyrészről a használati eset diagramokból tudtam a károkozási eseteket előállítani, valamint a komponens diagramban készült termékleírásból tudtam egy kezdeti fenyegetésmodellt előállítani amely alkalmas volt elemzések elvégzésére.
+
+A javasolt analízis megközelítés az irodalomkutatás valamint ipari ismeretek alapján az ISO 21434 \cite{ISO21434} Threat Analysis and Risk Assessment lett. Ennek az elvégzésére elkészült egy elemző eszköz amely Eclipse környezethez plugin formájában került implementálásra. Ez alkalmazás lehetővé tesz további automatizálási lehetőségeket is az elemzés elvégzése során.
+
+Elvégeztem egy esettanulmányt az ISO 14229 \cite{ISO14229} szabvány által definiált két diagnosztikai szolgáltatásra amelynek az eredményeit bemutattam.
+
+Az eszköz maga teljesíti az ISO 21434 szabvány követelményeit, alkalmas az integrációra bármilyen rendszermodellező eszközzel amelyben definiálható a kiberbiztonsági profil valamint a modellből szöveg generálásának lehetősége. Az elemzés elvégzése nagy mértékben gyorsított a nem modellalapú implementációkhoz képest és segít is a megértetésben a grafikus ábrázolása a támadási útvonalaknak. Az elemzések könnyen módosíthatóak, elvégezhetőek többször valamint tovább finomíthatóak a termékleírás bővítésével és új értékek bevonásával. Szintén fontos kiemelni, hogy ezen elemzések elvégzése kevesebb emberi erőforrást igényel, hiszen a támadási fák összeállítása egy specializált szaktudás amelyet később szakértőkkel lehet ellenőriztetni, nincs igény azoknak a folyamatos jelenlétére a fák konstruálása során.
+
+Fejlesztési lehetőségeknek megemlíteném egyrészről a manuális analízisnek a modellező eszközben való integrálását, ezzel csökkentve a különböző eszközökön végzett munkát. Szintén érdemesnek tartanám a mitigációk felvételét az egyes fenyegetésekhez, ezzel akár csökkentve a lehetséges támadási útvonalak számát. Utolsósorban pedig fontosnak tartanám az egyes fenyegetésekhez valós sérülékenység adatbázisoknak (pl. CVE) vagy más keretrendszerekkel (pl. MITRE) való megfeleltetését, ezzel is lehetővé téve alaposabb elemzéseket.

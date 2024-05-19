@@ -31,6 +31,51 @@ Ebben a fejezetben található minden továbbiakban nem általánosnak vehető, 
     \item \textbf{Támadási lépés (attack step):} Az egyes események amelyeknek az egymás utáni sorozata egy támadási útvonalat realizál
 \end{itemize}
 
+\section{Elektronikus vezérlőegységek kiberbiztonsága}
+
+A kiberbiztonság területét a védett infrastruktúra szerint három fő csoportra lehetne sorolni. 
+
+Ezek egyrészről az általános IT (Information Technology) security amely hálózati infrastruktúrák védelméről szól, ilyenek a szerverek, routerek, számítógépek, stb. 
+
+Az OT (Operational Technology) security már elsősorban a gyártósori eszközök, PLC-k, valamint azokat körbevevő infrastruktúráknak a védelmét jelenti. Itt észrevehető, hogy a PLC-k akár szintén tartozhatnának az IoT security-hez azonban most az értelmezés kedvéért ezt különválasztottam, hiszen a PLC önmagában nem fog értéket képviselni csak a nagyobb gyártósori rendszer részeként. 
+
+A harmadik csoport az IoT (Internet of Things) security lenne, ide tartozhat egyrészről a külön vett PLC-k biztonsága, valamint a háztartási eszközöktől (okos hűtő, sütő, stb.), okos otthon rendszereken át (redőny, klíma, stb.), egészen az ipari termékek biztonságáig amelyek végül járművek, repülők vagy más rendszerek működtetéséért felelnek.
+
+Az elektronikus vezérlőegység (electronic control unit, ECU) a tágabb értelemben vett IoT security területéhez tartoznának. \\
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=100mm, keepaspectratio]{figures/ecu.png}
+	\caption{Referencia kép egy elektronikus vezérlőegységről\cite{ecu}}
+	\label{fig:ecu}
+\end{figure}
+
+Az elektonikus vezérlőegységekből egy prémium személyautóban akár 100-150 db is létezhet, ezek különböző feladatokat láthatnak el kezdve az ülésmagasság állításától a motor részeinek működtetéséig. Ezek a vezérlőegységek kommunikációs buszokon keresztül kommunikálnak egymással, ezek a buszok lehetnek logikailag vagy akár fizikailag szegmentáltak. Egy ilyen vezérlőegység látható a \ref{fig:ecu} ábrán, a kommunikációs sinek pedig megtekinthetőek egy modern Bentley keresztmetszeti képén a \ref{fig:bentley} ábrán.\\
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[width=100mm, keepaspectratio]{figures/bentley.jpg}
+	\caption{Egy Bentley keresztmetszeti ábrázolásán látható kommunikációs sínek\cite{bentley}}
+	\label{fig:bentley}
+\end{figure}
+
+Egyes vezérlőegységek képesek lehetnek vezetéknélküli kommunikációra is, fedélzeti számítógép esetén ez lehet WiFi, GPS, Bluetooth, NFC stb., ami nagyban megnövelte a kiberbiztonsági kockázatok mértékét a modern járművekben. 
+
+Ami szintén fontos az még az over-the-air szoftverfrissítés, hiszen ma már nem arra rendezkedik be az autóipar, hogy az eszközein a szoftverfrissítést a szervizből kelljen elvégezni, hanem azt akár távolról, otthonról a garázsból.
+
+Ezek a feltételek jelentik a megnövekedett fontosságát a járművek kiberbiztonságának, azonban érdemes még kiemelni azokat a támadómodelleket amelyek jellemzőek lehetnek az autóiparban, ezzel is felkészülve a lehetséges károkra amelyektől védenénk a rendszert.\\
+
+A bűnözői attitűd lehet egyrészről jellemző, az autólopások már az elektronikus eszközök integrációját megelőzik, azonban azoknak a jelenléte nem minden esetben jelent magasabb fokú biztonságot. Az új elektronikus rendszerek például lehetővé tették azt is, hogy a támadó a fényszóró leszerelésével belépési pontra tegyen szert a járműben, majd azon keresztül oldja fel a zárakat és indítsa el a járművét. Erről bővebben lehet olvasni a Gareth Halfacree cikkében \cite{toyota}.
+
+Szintén érdekes és már régóta az autóipar része a tuningolás, ami a vezérlőegységek mennyisége és azoknak a belső paraméterei miatt ez még nagyobb kontrollt adhat egy jogosulatlan felhasználónak. Állíthat egyrészről akár kormányzási érzet paramétereket, de módosíthat kibocsátási vagy motor működést limitáló értékeket is.
+
+A fizetős extráknak a jailbreak-elése már játék konzolok és telefonok esetén ismert, azonban mióta egyes autógyártók előfizetéses extrává tettek olyan extrákat mint a hátsó ülésfűtés és hasonlók, azóta ez itt is egy természetesen illegális, kártékony tevékenység ami egy támadó célja lehet az ECU ellen. Erre egy példa lehet Arthur Parkhouse cikke \cite{tesla}.
+
+Szintén fontos kiemelni a vírusok (malware, ransomware) telepítését is elektronikus vezérlőegységekre, hiszen a távoli szoftverfrissítés támogatása lehetővé teszi az ezen támadások végrehajtását is.
+
+Végül amit fontos észben tartani, hogy az ezeken tárolt adatokat is fontos védeni, hiszen egy fedélzeti számítógép potenciálisan tárolhat személyes adatokat (personal identifiable information, PII) vagy akár felhasználóneveket, jelszavakat is navigációs és más elérhető alkalmazásokhoz. De maga a tárolt szoftver se kerülhet ki nyilvánosan hiszen az elősegítené a támadóknál a sérülékenységek keresését, azokra automatizált megoldások fejlesztését.
+
+
 \section{Autóipari kiberbiztonsági szabályozások és szabványok}
 
 Az autóipari kiberbiztonság területe ellentétben az üzembiztonsággal vagy a bővebb IT biztonsággal még csak pár éves múltra tekint vissza, emiatt az itt alkalmazandó szabályozások és szabványok még csak az első változatukban kerültek kiadásra. 
