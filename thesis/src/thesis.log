@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  20 MAY 2024 13:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.23)  20 MAY 2024 19:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,15 +788,9 @@ File: figures/ecu.png Graphic file (type png)
 Package pdftex.def Info: figures/ecu.png  used on input line 48.
 (pdftex.def)             Requested size: 284.52756pt x 189.81334pt.
 
-Underfull \hbox (badness 1484) in paragraph at lines 53--54
-[]\T1/lmr/m/n/10.95 Az elek-to-ni-kus ve-zér-l®-egy-sé-gek-b®l egy pré-mi-um sz
-e-mély-au-tó-ban akár 100-150
- []
-
-
-Underfull \hbox (badness 1342) in paragraph at lines 53--54
-\T1/lmr/m/n/10.95 lí-tá-sá-tól a mo-tor ré-sze-i-nek m¶-köd-te-té-sé-ig. Ezek a
- ve-zér-l®-egy-sé-gek kom-mu-ni-ká-ci-ós
+Underfull \hbox (badness 1270) in paragraph at lines 53--54
+\T1/lmr/m/n/10.95 lí-tá-sá-tól a mo-tor ré-sze-i-nek sza-bá-lyo-zá-sá-ig. Ezek 
+a ve-zér-l®-egy-sé-gek kom-mu-ni-ká-ci-ós
  []
 
 
@@ -809,13 +803,17 @@ File: figures/bentley.jpg Graphic file (type jpg)
 <use figures/bentley.jpg>
 Package pdftex.def Info: figures/bentley.jpg  used on input line 57.
 (pdftex.def)             Requested size: 284.52756pt x 159.9899pt.
-
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
-[4] [5 <./figures/ecu.png> <./figures/bentley.jpg>] [6] [7] [8] [9]
-<figures/02_ASPICE.png, id=371, 597.432pt x 301.125pt>
+[5 <./figures/ecu.png> <./figures/bentley.jpg>] [6] [7] [8]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+<figures/02_ASPICE.png, id=370, 597.432pt x 301.125pt>
 File: figures/02_ASPICE.png Graphic file (type png)
 <use figures/02_ASPICE.png>
 Package pdftex.def Info: figures/02_ASPICE.png  used on input line 206.
@@ -926,32 +924,25 @@ File: figures/04_abuse_case.png Graphic file (type png)
 <use figures/04_abuse_case.png>
 Package pdftex.def Info: figures/04_abuse_case.png  used on input line 44.
 (pdftex.def)             Requested size: 369.88582pt x 149.9816pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
 <figures/04_item_definition.PNG, id=465, 767.86874pt x 251.94125pt>
 File: figures/04_item_definition.PNG Graphic file (type png)
 <use figures/04_item_definition.PNG>
-Package pdftex.def Info: figures/04_item_definition.PNG  used on input line 65.
+Package pdftex.def Info: figures/04_item_definition.PNG  used on input line 69.
 
 (pdftex.def)             Requested size: 369.88582pt x 121.36482pt.
-[21 <./figures/04_abuse_case.png>]
+ [21 <./figures/04_abuse_case.png>]
 <figures/04_dependencies.png, id=473, 452.4403pt x 296.60812pt>
 File: figures/04_dependencies.png Graphic file (type png)
 <use figures/04_dependencies.png>
-Package pdftex.def Info: figures/04_dependencies.png  used on input line 92.
+Package pdftex.def Info: figures/04_dependencies.png  used on input line 96.
 (pdftex.def)             Requested size: 369.88582pt x 242.48703pt.
  [22 <./figures/04_item_definition.PNG>]
 <figures/04_attack_tree.png, id=480, 6968.0325pt x 7224.9925pt>
 File: figures/04_attack_tree.png Graphic file (type png)
 <use figures/04_attack_tree.png>
-Package pdftex.def Info: figures/04_attack_tree.png  used on input line 125.
+Package pdftex.def Info: figures/04_attack_tree.png  used on input line 129.
 (pdftex.def)             Requested size: 369.88582pt x 383.4299pt.
-
-[23 <./figures/04_dependencies.png>] [24 <./figures/04_attack_tree.png>])
-[25]
+ [23 <./figures/04_dependencies.png>] [24 <./figures/04_attack_tree.png>]) [25]
 \openout2 = `content/05_analysis-tool.aux'.
 
  (content/05_analysis-tool.tex
@@ -1206,7 +1197,7 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Here is how much of TeX's memory you used:
  17399 strings out of 478582
  290724 string characters out of 2843400
- 849303 words of memory out of 3000000
+ 848304 words of memory out of 3000000
  35083 multiletter control sequences out of 15000+600000
  526483 words of font info for 63 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -1222,7 +1213,7 @@ r12.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mr6.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
 mri10.pfb><C:/Users/csedome/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
 /lmtl10.pfb>
-Output written on thesis.pdf (57 pages, 6267764 bytes).
+Output written on thesis.pdf (57 pages, 6268183 bytes).
 PDF statistics:
  777 PDF objects out of 1000 (max. 8388607)
  134 named destinations out of 1000 (max. 500000)

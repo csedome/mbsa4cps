@@ -4,12 +4,12 @@ Az esettanulmányomnak a célja, hogy egy példán keresztül bemutassam az ált
 
 Az esettanulmányom tárgyaként az elektronikus vezérlő egységek (ECU) diagnosztikai szolgáltatását választottam. Ennek oka egyrészről az, hogy az elemzett diagnosztikai szolgáltatások specifikációja publikusan elérhető az ISO 14229 "Road vehicles - Unified Diagnostic Services (UDS)" \cite{ISO14229} szabványban. Másrészről ez egy olyan potenciális belépőpontja lehet a támadóknak amely nem igényel semmiféle fizikai hozzáférést a járműhöz. Amennyiben távolról sikeresen hozzáfér és átveszi az irányítását a támadó egy elektronikus vezérlő egységnek, ami képes V2X vagy más vezetéknélküli szolgáltatásra, onnantól kezdve a jármű többi részén lévő diagnosztikai szolgáltatások is elérhetővé válhatnak számára.\\
 
-Az ISO 14229\cite{ISO14229} definiálja az Unified Diagnostic Services (röviden UDS) protokollt ami egy alkalmazásrétegbeli szolgáltatás. Általános IT biztonsági szempontból, ehhez legközelebbinek a TLS és HTTPS protokollok lennének mondhatók.
+Az ISO 14229 \cite{ISO14229} definiálja az Unified Diagnostic Services (röviden UDS) protokollt ami egy alkalmazásrétegbeli szolgáltatás. Általános IT biztonsági szempontból, ehhez legközelebbinek a TLS és HTTPS protokollok lennének mondhatók.
 
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=120mm, keepaspectratio]{figures/06_isoosi.jpg}
-	\caption{ISO/OSI modell autóipari kommunikációs protokollokra\cite{ISOOSI}}
+	\caption{ISO/OSI modell autóipari kommunikációs protokollokra \cite{ISOOSI}}
 \end{figure}
 
 Az esettanulmányomban a szolgáltatások közül kettővel, a diagnosztikai autentikációval, valamint a software frissítéssel fogok foglalkozni, mivel ezek a kiemelten kiberbiztonsági relevanciával rendelkező szolgáltatások.\\
@@ -33,7 +33,7 @@ Ezt a folyamat természetesen bővíthető további vagy ezeket megelőző lép�
 
 Érdemes kiemelni itt, hogy ez a frissítési metódus eleinte a járműszervizben történt volna a szerelő által, de a napjainkban már ezeknek a távoli elérése, jellemzően egy külön erre integrált elektronikus vezérlőegység által is lehet lefolytatva. Ezeknek sokban kényelmi, de szintén szoftveres sérülékenységek vagy hibák javítása szempontjából is fontos szerepük van.\\
 
-A protokoll egyébként tartalmaz olyan szolgáltatásokat mint a \textbf{Routine Control (0x31)} amellyel a beszállító és a vevő az eszközre specifikus, nem szabványos diagnosztikai szolgáltatásokat is definiálhat. Ilyenek lehetnek kulcs és tanúsítványkezelő rutinok.
+A protokoll egyébként tartalmaz olyan szolgáltatásokat mint a \textbf{Routine Control (0x31)} amellyel a beszállító és a vevő az eszközre specifikus, nem szabványos diagnosztikai szolgáltatásokat is definiálhat. Ilyenek lehetnek kulcs és tanúsítványkezelő rutinok, illetve gyártósoron használt szolgáltatások.
 
 \section{Károkozások és értékek azonosítása}
 
@@ -55,7 +55,7 @@ A \ref{fig:diag_abuse} ábrán láthatóak a potenciális károkozások. A korá
 	\label{fig:diag_abuse}
 \end{figure}
 
-A termékleíráshoz funkcionalitásokat definiáltuk, kellenek még az ezek által dependált értékek. HW-es komponensből egyedül a CAN csatlakozó hozható fel hiszen azon fog keresztül utazni a bejövő UDS üzenet. SW-szintű értékekből vehetjük a CAN üzenetet amiben utazik az UDS üzenet, maga az UDS üzenet, valamint az az által szállított adatok. Ez a szállított adat a szoftverfrissítés esetén a szoftver lesz, egyébként pedig diagnosztikai adatok lehetnek elérhetőek kiolvasásra az autentikációt követően.
+A termékleíráshoz a funkcionalitásokat definiáltuk, kellenek még az ezek által dependált értékek. HW-es komponensből egyedül a CAN csatlakozó hozható fel hiszen azon fog keresztül utazni a bejövő UDS üzenet. SW-szintű értékekből vehetjük a CAN üzenetet amiben utazik az UDS üzenet, maga az UDS üzenet, valamint az az által szállított adatok. Ez a szállított adat a szoftverfrissítés esetén a szoftver lesz, egyébként pedig diagnosztikai adatok lehetnek elérhetőek kiolvasásra az autentikációt követően.
 
 A termékleírás ábrázolva a \ref{fig:item_def} ábrán látható. A sztereotípiák felvétele után volt lehetőségem az attributálásra, ezt a következőképpen tettem meg:
 \begin{itemize}

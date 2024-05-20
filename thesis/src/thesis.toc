@@ -14,11 +14,11 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {2.4.2}STRIDE}{9}{subsection.2.4.2}%
 \select@language {magyar} \contentsline {section}{\numberline {2.5}Autóipari rendszerek általános tervezése és modellezése}{10}{section.2.5}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.5.1}V-modell}{10}{subsection.2.5.1}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}UML és SysML}{10}{subsection.2.5.2}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.5.2}UML és SysML}{11}{subsection.2.5.2}%
 \select@language {magyar} \contentsline {section}{\numberline {2.6}Felhasznált eszközök}{11}{section.2.6}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.6.1}Papyrus}{11}{subsection.2.6.1}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.6.2}Acceleo}{11}{subsection.2.6.2}%
-\select@language {magyar} \contentsline {subsection}{\numberline {2.6.3}Eclipse Modelling Framework}{11}{subsection.2.6.3}%
+\select@language {magyar} \contentsline {subsection}{\numberline {2.6.3}Eclipse Modelling Framework}{12}{subsection.2.6.3}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.6.4}Xtend}{12}{subsection.2.6.4}%
 \select@language {magyar} \contentsline {subsection}{\numberline {2.6.5}Sirius}{12}{subsection.2.6.5}%
 \select@language {magyar} \contentsline {chapter}{\numberline {3}Kapcsolódó tanulmányok}{13}{chapter.3}%
