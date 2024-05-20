@@ -51,7 +51,7 @@
 \select@language {magyar} \contentsline {section}{\numberline {6.1}Károkozások és értékek azonosítása}{37}{section.6.1}%
 \select@language {magyar} \contentsline {section}{\numberline {6.2}Fenyegetésmodell származtatása}{40}{section.6.2}%
 \select@language {magyar} \contentsline {section}{\numberline {6.3}Fenyegetésmodellezés}{40}{section.6.3}%
-\select@language {magyar} \contentsline {section}{\numberline {6.4}Támadási fa analízis}{40}{section.6.4}%
-\select@language {magyar} \contentsline {section}{\numberline {6.5}Manuális analízis}{42}{section.6.5}%
-\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{46}{chapter.7}%
-\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{47}{chapter.7}%
+\select@language {magyar} \contentsline {section}{\numberline {6.4}Támadási fa analízis}{41}{section.6.4}%
+\select@language {magyar} \contentsline {section}{\numberline {6.5}Manuális analízis}{47}{section.6.5}%
+\select@language {magyar} \contentsline {chapter}{\numberline {7}Összegzés}{49}{chapter.7}%
+\select@language {magyar} \contentsline {chapter}{Irodalomjegyz\'ek}{50}{chapter.7}%

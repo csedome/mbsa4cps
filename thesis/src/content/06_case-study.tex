@@ -118,6 +118,7 @@ A dependenciák meghatározásánál a károkozásokhoz hozzátudjuk rendelni a 
 Továbbá mindkét funkcionalitáshoz tartozik a \textbf{CAN Connector} mint HW komponens valamint a \textbf{CAN Message} és \textbf{UDS Message} mint információ. Amiben a két funkcionalitás eltér, hogy ameddig a \textbf{Software Update} esetén az érkező üzenetek a \textbf{Software}-t tartalmazzák, addig az autentikáció után elsősorban a kimenő \textbf{Diagnostic Data} az érték amit védeni akarunk.
 
 Ebből generált majd megszerkesztett hibafák és elemzésük alább megtekinthető. \\
+\newpage
 
 \section{Támadási fa analízis}
 
@@ -134,6 +135,17 @@ Másodsorban két támadási irányt különítettem el, az egyik esetben a tám
 	\label{fig:ff_leak_sw}
 \end{figure}
 
+\newpage
+
+A következő támadási fa a \textit{Change software} károkozáshoz készült és az \ref{fig:ff_change_sw} ábrán látható. 
+
+Itt egyrészről különvettem egy \textit{Surveillance} pszeudo-fenyegetést, amely maga alá gyűjti azokat a fenyegetéseket amelyek önmagukban nem képesek a károkozást okozni, azonban ezt is kénytelenek előzetesen megtenni. A feltételezés az az, hogy a támadónak egy szoftver frissítési folyamatot le kell hallgatnia ahhoz, hogy a sajátját is véghez vigye. Itt egyrészről arról van szó, hogy a támadó azonosítja az ECU-kat a CAN és UDS üzenetek metaadatai alapján, valamint a szoftver felépítését is szükséges azonosítania ahhoz, hogy végül egy saját szoftvert is képes legyen az eszközre feltölteni.
+
+Emellett egyértelműen szükséges a HW oldaláról a CAN busz integritásának megváltoztatása, hogy a támadó képes legyen a saját üzeneteit elküldeni a célpont ECU-nak.
+
+Végül maga a szerkesztett vagy saját szoftver feltöltés lesz a következő lépés, ez magával vonja mind az egyedi CAN és UDS üzenet illetve szoftver létrehozását a támadó oldalról, úgy, hogy azt a célpont ECU elfogadja.
+
+Megfigyelhető, hogy itt egyébként nincs szükség erre a szegmentálásra, hiszen minden atomi fenyegetésnek jelen kell lennie a rendszerben a rendszerszintű fenyegetés aktiválásához, viszont ebben a formában átláthatóbb és funkcionálisan nincs hatással az elemző eszköz működésére ez a formátum.
 
 \begin{figure}[!ht]
 	\centering
@@ -141,24 +153,50 @@ Másodsorban két támadási irányt különítettem el, az egyik esetben a tám
 	\caption{Támadási fa a "Change software" károkozáshoz} 
 	\label{fig:ff_change_sw}
 \end{figure}
+
+\newpage
+
+A szoftver elérhetőségének módosítására az \ref{fig:ff_remove_sw} ábrán láthatjuk a támadási fát. Ez a támadás már sokkal több módon elvégezhető, a kár kisebb a többi esethez képest azonban az elvégzéséhez szükséges tudás is a támadó részéről.
+
+Egyrészről az első szinten külön vettem a HW-es kapcsolat megszüntetését amely egy fizikai hozzáférést jelentene a járműhöz attól ami potenciálisan távolról is elvégezhető.
+
+A távolról elvégezhető esetben lehetőség szerint a támadó egyrészről sértenie kell a CAN busz integritását másrészről vagy az érkező üzenetek blokkolását kell elérnie, ezzel a szoftver funkcionalitását blokkolva vagy azokat úgy módosítva, hogy utána a célpont ECU ne fogadja el azokat (pl. szálított adat módosítása úgy hogy a CRC nincs módosítva egyenesen vezetne az üzenet eldobásához üzembiztonsági elvárások miatt).
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECSW-02.png}
 	\caption{Támadási fa a "Remove software" károkozáshoz} 
 	\label{fig:ff_remove_sw}
 \end{figure}
+
+\newpage
+
+Áttérve a diagnosztikai adatok szivárogtatására az \ref{fig:ff_leak_data} ábrán, itt is alapvetésnek vesszük a CAN busz integritásának változását valamint magát az adatszivárgást.
+
+A következő szinten két utat különböztetünk meg az információkhoz való hozzáférésnél, egyik esetben a bejövő üzenetek lehallgatása és visszafejtése lehet a támadó megoldása. A másik bonyolultabb esetben olyan üzeneteket kell a támadónak konstruálnia amelyeket a célpont ECU tud értelmezni valamint, megfelelőnek és jogosultnak ítél.
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-00.png}
 	\caption{Támadási fa a "Leak confidential data" károkozáshoz} 
 	\label{fig:ff_leak_data}
 \end{figure}
+
+\newpage
+
+Az \ref{fig:ff_access} ábrán, azt a támadási fát keressük amelyikkel a támadó hozzáférhet korlátozott elérésű diagnosztikai szolgáltatásokhoz. Hasonlóan a szoftver megváltoztatásához itt is szükségeltetik egy lehallgatási lépés, valamint ezen túl a megfelelő üzenetek konstruálása amely különböző mitigációk segítségével jól védhető.
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-01.png}
 	\caption{Támadási fa a "Access unauthorized functionality" károkozáshoz} 
 	\label{fig:ff_access}
 \end{figure}
+
+\newpage
+
+Az \ref{fig:ff_block_auth} ábrán, az autentikációs lépések blokkolását okozó támadási fa látható. Ez is megegyezik a szoftver frissítés elérhetőségét sértő fához. Ennek az oka ezúttal is az, hogy a műveletet mivel mindkettő diagnosztikai szolgáltatás, ugyanazon lépésekkel kell megtenni ezen az absztrakciós szinten.
+
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[width=120mm, keepaspectratio]{figures/AT-SECDIAG-02.png}
@@ -166,9 +204,15 @@ Másodsorban két támadási irányt különítettem el, az egyik esetben a tám
 	\label{fig:ff_block_auth}
 \end{figure}
 
+Összességében elmondható, hogy a támadási fák konstruálása helyes, ezt bizonyítja az is, hogy a diagnosztikai rutinok támadási fái ugyanazon mintákat követik hiszen ugyan azon értékeket használja a két szolgáltatás. Amennyiben a szoftvert és a diagnosztikai adatot egy absztraktabb \textit{adat} meghatározással jelöltük volna a termékleírásban úgy elég lett volna kevesebb támadási fa azonban, ezeknek a külön vétele a manuális analízishez szükséges.
+
+Szintén elmondható, hogy az eljárás gyors és ezáltal könnyen megismételhető. Ezen támadási fáknak a konstruálása ugyanazon atomi és legfelső eseményekből áll így a kontextus váltás a külön fák konstruálásakor jóval egyszerűbb.
+
+Végül pedig a teljességet is teljesíti a támadási fa, minden termékleírásban valamint fenyegetésmodellben meghatározott érték elleni fenyegetés szerepel valamely támadási fában egyrészről, másrészről pedig megteremtettünk egy lekövethetőséget (traceability) a SW-, illetve HW-szintű fenyegetések valamint a károkozások között.
+
 \section{Manuális analízis}
 
-A következő lépés pedig a manuális analízis itt először a hatásérték elemzést, utána pedig a támadás megvalósíthatóság elemzést végezzük el.\\
+Az utolsó lépése az elemzésnek a manuális analízis. Itt először a hatásérték elemzést, utána pedig a támadás megvalósíthatóság elemzést végezzük el.\\
 
 Ahogy az a \ref{fig:ff_imprate} ábrán látható a SFOP értékek mentén meg lettek határozva a hatásértékei az egyes károkozásoknak.
 
