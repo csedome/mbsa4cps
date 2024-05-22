@@ -34,6 +34,5 @@ But the profile can be applied to and the code generator can be modified to hand
 The codegenerator is implemented in Acceleo because of its easy to use integration with Papyrus. 
 It generates the .apeditor file to be used with apE. 
 
-[Acceleo file](hu.bme.mit.thesis.tmgen/src/hu/bme/mit/thesis/tmgen/main/generate.mtl)
-
-[Result](hu.bme.mit.thesis.tmgen/generated/Example.apeditor)
+[Acceleo file](workspace/hu.bme.mit.thesis.tmgen/src/hu/bme/mit/thesis/tmgen/main/generate.mtl)
+[Result](workspace/hu.bme.mit.thesis.tmgen/generated/Example.apeditor)
