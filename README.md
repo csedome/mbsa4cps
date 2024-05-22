@@ -35,4 +35,5 @@ The codegenerator is implemented in Acceleo because of its easy to use integrati
 It generates the .apeditor file to be used with apE. 
 
 [Acceleo file](workspace/hu.bme.mit.thesis.tmgen/src/hu/bme/mit/thesis/tmgen/main/generate.mtl)
+
 [Result](workspace/hu.bme.mit.thesis.tmgen/generated/Example.apeditor)
